@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Technologist &amp; Informatics Scholar — Personal Portfolio</title>
+
+  <meta name="description"
+    content="Personal portfolio of a Creative Technologist, Frontend Architect, UI/UX Designer, and Artificial Intelligence Researcher.">
+  <meta name="theme-color" content="#050505">
+
+  <!-- OpenGraph / Social Meta -->
+  <meta property="og:title" content="Creative Technologist — Luxury Editorial Portfolio">
+  <meta property="og:description" content="Frontend Architecture, UI/UX Craftsmanship, and Applied AI Research.">
+  <meta property="og:type" content="website">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: '#050505',
+            surface: '#0D0F14',
+            'surface-2': '#141A26',
+            navy: {
+              DEFAULT: '#1E3A8A',
+              deep: '#172554'
+            },
+            'blue-accent': '#60A5FA',
+            primary: { DEFAULT: '#1E3A8A', dark: '#172554', light: '#60A5FA' },
+            accent: { DEFAULT: '#60A5FA', hover: '#93C5FD' },
+            ivory: { DEFAULT: '#050505', light: '#0D0F14', warm: '#141A26' },
+            charcoal: { DEFAULT: '#FFFFFF', soft: '#A1A8B8', muted: '#64748B' },
+            burgundy: { DEFAULT: '#60A5FA', dark: '#172554', light: '#93C5FD' },
+            beige: { DEFAULT: '#141A26', dark: '#1E293B' }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', '"Playfair Display"', 'Georgia', 'serif'],
+            display: ['"Playfair Display"', '"Cormorant Garamond"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Editorial Luxury Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-[#050505] text-[#FFFFFF] selection:bg-[#1E3A8A] selection:text-white">
+
+  <!-- Subtle Film Grain Overlay -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Custom Luxury Cursor -->
+  <div class="custom-cursor-dot" aria-hidden="true"></div>
+  <div class="custom-cursor-ring" aria-hidden="true"></div>
+
+  <!-- ========================================================================
+       1. NAVIGATION BAR
+       Ultra-clean: Tanpa nama, tanpa jam, tanpa tombol WhatsApp
+       ======================================================================== -->
+  <header class="site-header py-5 md:py-7 px-6 lg:px-12">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+
+      <!-- Brand Name: Hidden when at Home, visible on scroll to other sections (Experience, Project, Skill, Contact) -->
+      <a href="#home" id="nav-brand-name"
+        class="font-serif tracking-widest text-sm font-semibold text-white hover:text-[#60A5FA] transition-all duration-300 opacity-0 pointer-events-none -translate-x-2 shrink-0">
+        TSALITS
+      </a>
+
+      <!-- Desktop Navigation Links (Centered & Spacious) -->
+      <nav class="hidden lg:flex items-center gap-10 font-sans mx-auto" aria-label="Main Navigation">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="projects.html" class="nav-link">Project</a>
+        <a href="organization.html" class="nav-link">Organization</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Right Spacer for Balance & Mobile Toggle -->
+      <div class="w-16 hidden lg:block"></div>
+
+      <!-- Mobile Menu Toggle Button (Visible only on mobile) -->
+      <div class="lg:hidden ml-auto">
+        <button id="mobile-menu-toggle" class="p-2 text-white hover:text-[#60A5FA] transition-colors"
+          aria-label="Toggle navigation menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Menu Fullscreen Overlay -->
+  <div id="mobile-menu-overlay" class="mobile-menu-overlay lg:hidden" aria-hidden="true">
+    <div>
+      <div class="text-[10px] tracking-widest uppercase text-[#60A5FA] font-sans font-semibold mb-6">
+        Portfolio Navigation
+      </div>
+      <nav class="space-y-4 font-serif">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="experience.html" class="mobile-nav-link">Experience</a>
+        <a href="projects.html" class="mobile-nav-link">Project</a>
+        <a href="organization.html" class="mobile-nav-link">Organization</a>
+        <a href="#skills" class="mobile-nav-link font-sans text-xl">Skills</a>
+        <a href="#contact" class="mobile-nav-link font-sans text-xl">Contact</a>
+      </nav>
+    </div>
+
+    <div class="pt-8 border-t border-[rgba(255,255,255,0.08)]">
+      <div class="text-xs text-[#A1A8B8] font-sans">
+        Creative Technologist &middot; Luxury Editorial Design
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ========================================================================
+         2. HERO / HOME INTRO SECTION (CENTERED LUXURY EDITORIAL LAYOUT)
+         - No photo (as requested: "tidak ada fotoku")
+         - Centered name, headline, concise description
+         - Contact icons: Email, LinkedIn, GitHub (https://github.com/TsalitsFatah)
+         - Custom Dark Luxury interactive ambient constellation & nebula background
+         ======================================================================== -->
+    <section id="home"
+      class="hero-wrapper relative min-h-screen flex items-center justify-center px-6 lg:px-12 pt-36 pb-24 border-b border-[rgba(255,255,255,0.08)] overflow-hidden">
+
+      <!-- Interactive Dark Luxury Constellation Canvas Background -->
+      <canvas id="hero-constellation-canvas" class="absolute inset-0 w-full h-full pointer-events-none z-0"
+        aria-hidden="true"></canvas>
+
+      <!-- Ambient Nebula Aura Glows -->
+      <div class="hero-aurora-glow-1" aria-hidden="true"></div>
+      <div class="hero-aurora-glow-2" aria-hidden="true"></div>
+
+      <!-- Hero Content Container (Centered) -->
+      <div class="max-w-4xl mx-auto w-full text-center relative z-10 flex flex-col items-center">
+
+        <!-- Status Badge (Open to Work) -->
+        <div
+          class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#0D0F14]/90 border border-[rgba(255,255,255,0.12)] text-xs font-sans text-[#A1A8B8] mb-8 backdrop-blur-md shadow-lg reveal-init">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span class="tracking-widest uppercase text-[11px] font-semibold text-white/90">Open to Work &amp;
+            Opportunities</span>
+        </div>
+
+        <!-- Name Title (Styled with Italic "I'm" and Luxury Cormorant Display) -->
+        <h1
+          class="editorial-title text-5xl sm:text-7xl md:text-8xl lg:text-[5.8rem] text-white leading-[1.02] tracking-tight mb-4 reveal-init">
+          <span class="editorial-italic font-serif font-light text-[#60A5FA]">I'm </span>Tsalits Sabila Fatah
+        </h1>
+
+        <!-- Headline / Role Subtitle -->
+        <div class="font-sans text-xl sm:text-2xl md:text-3xl font-medium text-white/90 mb-5 tracking-wide reveal-init">
+          QA &amp; System Analysis | Frontend &amp; UI/UX Background
+        </div>
+
+        <!-- Concise Description -->
+        <p
+          class="text-[#A1A8B8] text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl mx-auto font-sans mb-8 reveal-init">
+          Lulusan S1 Informatika yang menggabungkan pemahaman desain, frontend, dan pengujian perangkat lunak untuk
+          membangun produk yang andal.
+        </p>
+
+        <!-- Social / Contact Icons Row (LinkedIn, GitHub, Email) -->
+        <div class="flex items-center justify-center gap-3.5 mb-8 reveal-init">
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/tsalitssabila" target="_blank" rel="noopener noreferrer"
+            aria-label="Profil LinkedIn Tsalits Sabila Fatah" class="hero-social-icon-btn group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+              class="group-hover:scale-110 group-hover:stroke-[#60A5FA] transition-all">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect width="4" height="12" x="2" y="9"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+
+          <!-- GitHub (exact URL: https://github.com/TsalitsFatah) -->
+          <a href="https://github.com/TsalitsFatah" target="_blank" rel="noopener noreferrer"
+            aria-label="GitHub Repository Tsalits Sabila Fatah" class="hero-social-icon-btn group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+              class="group-hover:scale-110 group-hover:stroke-[#60A5FA] transition-all">
+              <path
+                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+              </path>
+              <path d="M9 18c-4.51 2-5-2-7-2"></path>
+            </svg>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:tsalitssabila@gmail.com" aria-label="Kirim Email ke Tsalits Sabila Fatah"
+            class="hero-social-icon-btn group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+              class="group-hover:scale-110 group-hover:stroke-[#60A5FA] transition-all">
+              <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+          </a>
+
+        </div>
+
+        <!-- Resume / About Pill Button (as in reference) -->
+        <div class="reveal-init">
+          <a href="about.html"
+            class="inline-flex items-center gap-2.5 px-6 py-2.5 rounded-full bg-[#141A26] hover:bg-[#1E3A8A] text-white border border-[rgba(255,255,255,0.12)] hover:border-[#60A5FA] transition-all duration-300 text-xs font-sans tracking-widest uppercase shadow-md hover:shadow-[0_0_20px_rgba(96,165,250,0.3)] hover:-translate-y-0.5 group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="text-[#60A5FA] group-hover:text-white transition-colors">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            <span class="font-semibold">RESUME / ABOUT</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+              class="group-hover:translate-x-1 transition-transform">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         3. SECTION: EXPERIENCE, PROJECT & ORGANIZATION (3 CARDS DENGAN JARAK)
+         Setiap kartu berdiri mandiri dengan gap, animasi hover lift, dan deskripsi singkat padat
+         ======================================================================== -->
+    <section id="overview" class="py-20 md:py-28 px-6 lg:px-12 bg-[#0D0F14] border-b border-[rgba(255,255,255,0.08)]">
+      <div class="max-w-7xl mx-auto">
+
+        <!-- Grid 3 Kolom dengan Gap/Jarak Nyata Antar Kartu -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 items-stretch">
+
+          <!-- Kartu 1: Work Experience -->
+          <div id="experience" class="pillar-card group reveal-init">
+            <div class="pillar-accent-top"></div>
+            <div class="pillar-watermark">01</div>
+
+            <div class="relative z-10">
+              <div class="pillar-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+
+              <div class="text-[10px] tracking-widest uppercase font-semibold text-[#60A5FA] font-sans mb-1.5">
+                Track Record
+              </div>
+
+              <h2
+                class="editorial-title text-3xl sm:text-4xl text-white mb-4 group-hover:text-[#60A5FA] transition-colors leading-snug">
+                Work Experience
+              </h2>
+
+              <!-- Deskripsi Singkat & Padat (Natural Human Tone) -->
+              <p class="text-[#A1A8B8] text-sm leading-relaxed font-sans mb-8">
+                Pengalaman kerja industri di cmlabs, inkubasi startup Bandung Techno Park, serta asisten praktikum
+                laboratorium basis data.
+              </p>
+            </div>
+
+            <div class="relative z-10 pt-4 border-t border-[rgba(255,255,255,0.08)]">
+              <a href="experience.html"
+                class="btn-editorial btn-editorial-burgundy w-full justify-between group/btn text-xs py-3 px-5">
+                <span>More Info</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="group-hover/btn:translate-x-1.5 transition-transform">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Kartu 2: Project Experience -->
+          <div id="project" class="pillar-card group reveal-init">
+            <div class="pillar-accent-top"></div>
+            <div class="pillar-watermark">02</div>
+
+            <div class="relative z-10">
+              <div class="pillar-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+
+              <div class="text-[10px] tracking-widest uppercase font-semibold text-[#60A5FA] font-sans mb-1.5">
+                Portfolio
+              </div>
+
+              <h2
+                class="editorial-title text-3xl sm:text-4xl text-white mb-4 group-hover:text-[#60A5FA] transition-colors leading-snug">
+                Project Experience
+              </h2>
+
+              <!-- Deskripsi Singkat & Padat (Natural Human Tone) -->
+              <p class="text-[#A1A8B8] text-sm leading-relaxed font-sans mb-8">
+                Kumpulan proyek yang mencakup pengujian perangkat lunak, analisis dan perancangan sistem, aplikasi web,
+                perancangan antarmuka UI/UX, serta riset kecerdasan buatan
+              </p>
+            </div>
+
+            <div class="relative z-10 pt-4 border-t border-[rgba(255,255,255,0.08)]">
+              <a href="projects.html"
+                class="btn-editorial btn-editorial-burgundy w-full justify-between group/btn text-xs py-3 px-5">
+                <span>More Info</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="group-hover/btn:translate-x-1.5 transition-transform">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Kartu 3: Organizational & Committee Experience -->
+          <div id="organization" class="pillar-card group reveal-init">
+            <div class="pillar-accent-top"></div>
+            <div class="pillar-watermark">03</div>
+
+            <div class="relative z-10">
+              <div class="pillar-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+
+              <div class="text-[10px] tracking-widest uppercase font-semibold text-[#60A5FA] font-sans mb-1.5">
+                Leadership &amp; Committee
+              </div>
+
+              <h2
+                class="editorial-title text-3xl sm:text-4xl text-white mb-4 group-hover:text-[#60A5FA] transition-colors leading-snug">
+                Organizational &amp; Committee Experience
+              </h2>
+
+              <!-- Deskripsi Singkat & Padat (Natural Human Tone) -->
+              <p class="text-[#A1A8B8] text-sm leading-relaxed font-sans mb-8">
+                Pengalaman kepemimpinan di BEM Telkom University, tata kelola anggaran kepanitiaan, dan Master of
+                Ceremony
+                (MC).
+              </p>
+            </div>
+
+            <div class="relative z-10 pt-4 border-t border-[rgba(255,255,255,0.08)]">
+              <a href="organization.html"
+                class="btn-editorial btn-editorial-burgundy w-full justify-between group/btn text-xs py-3 px-5">
+                <span>More Info</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="group-hover/btn:translate-x-1.5 transition-transform">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         4. SECTION: SKILLS (HALAMAN KECIL DENGAN ANIMASI LUXURY MARQUEE)
+         Dual running infinite marquee ticker
+         ======================================================================== -->
+    <section id="skills" class="py-24 md:py-32 bg-[#050505] border-b border-[rgba(255,255,255,0.08)] overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12 mb-12">
+        <div class="text-center max-w-2xl mx-auto">
+          <h2 class="editorial-title text-4xl sm:text-5xl md:text-6xl text-white mb-4">
+            Skills &amp; <span class="editorial-italic font-serif text-[#60A5FA]">Tools</span>
+          </h2>
+          <p class="text-[#A1A8B8] text-sm md:text-base font-sans">
+            Keahlian teknis dan non-teknis yang saya gunakan untuk menguji, menganalisis, merancang, dan membangun
+            produk digital.
+          </p>
+        </div>
+      </div>
+
+      <!-- Marquee Ticker 1 (Bergerak ke Kiri) -->
+      <div class="marquee-container mb-6 overflow-hidden py-2">
+        <div class="marquee-track-left gap-4 flex">
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">React.js</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Vue.js</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Figma UI/UX</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">HyperText Markup Language (HTML)</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">JavaScript</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Cascading Style Sheets (CSS)</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Canva</span></div>
+          <!-- Loop Duplication -->
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">React.js</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Vue.js</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Figma UI/UX</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">HyperText Markup Language (HTML)</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">JavaScript</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Cascading Style Sheets (CSS)</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Canva</span></div>
+        </div>
+      </div>
+
+      <!-- Marquee Ticker 2 (Bergerak ke Kanan) -->
+      <div class="marquee-container mb-6 overflow-hidden py-2">
+        <div class="marquee-track-right gap-4 flex">
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Python AI &amp; ML</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Microsoft Excel</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Microsoft Word</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">SQL &amp; Database Modeling</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Software QA (STLC/SDLC)</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">UML Architecture</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Laravel Framework</span></div>
+          <!-- Loop Duplication -->
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Python AI &amp; ML</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Microsoft Excel</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Microsoft Word</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">SQL &amp; Database Modeling</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Software QA (STLC/SDLC)</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">UML Architecture</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Laravel Framework</span></div>
+        </div>
+      </div>
+
+      <!-- Marquee Ticker 3 (Bergerak ke Kiri) -->
+      <div class="marquee-container mb-6 overflow-hidden py-2">
+        <div class="marquee-track-left gap-4 flex">
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Pengujian Perangkat Lunak</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Analisis Kebutuhan</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Perancangan Sistem</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Komunikasi</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Kerja Tim</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Manajemen Waktu</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Pemecahan Masalah</span></div>
+          <!-- Loop Duplication -->
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Pengujian Perangkat Lunak</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Analisis Kebutuhan</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Perancangan Sistem</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Komunikasi</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Kerja Tim</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Manajemen Waktu</span></div>
+          <div class="skill-pill-card"><span class="pill-dot"></span><span
+              class="font-serif text-lg font-medium text-white">Pemecahan Masalah</span></div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ========================================================================
+         5. SECTION: CONTACT (RINGKAS & NYAMAN DI LIHAT OLEH HRD)
+         Padding atas-bawah proporsional, 4 tombol kontak langsung
+         ======================================================================== -->
+    <section id="contact" class="py-16 md:py-20 px-6 lg:px-12 bg-[#0D0F14] text-white relative overflow-hidden">
+
+      <div
+        class="absolute -top-32 -right-32 w-80 h-80 rounded-full bg-[#1E3A8A] opacity-20 filter blur-3xl pointer-events-none">
+      </div>
+      <div
+        class="absolute -bottom-32 -left-32 w-80 h-80 rounded-full bg-[#1E3A8A] opacity-15 filter blur-3xl pointer-events-none">
+      </div>
+
+      <div class="max-w-7xl mx-auto relative z-10">
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+
+          <!-- Kiri: Closing Statement & Badge HRD -->
+          <div class="lg:col-span-7">
+            <div class="mb-4 flex items-center gap-3">
+              <span class="contact-hrd-badge">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                Open for Hiring &amp; Collaborations
+              </span>
+            </div>
+
+            <h2 class="font-serif text-4xl sm:text-6xl md:text-7xl leading-[0.95] text-white mb-4">
+              Let's Create <br>
+              Something <span class="editorial-italic font-serif text-[#60A5FA]">Meaningful</span>.
+            </h2>
+
+            <p class="text-[#A1A8B8] text-sm md:text-base max-w-xl font-sans leading-relaxed">
+              Terbuka untuk magang maupun posisi full-time di bidang Software QA, Software Testing, dan System Analysis.
+              HRD atau recruiter, silakan hubungi saya melalui saluran di sebelah kanan.
+            </p>
+          </div>
+
+          <!-- Kanan: 3 Tombol Kontak Langsung untuk HRD (Email, LinkedIn, Instagram) -->
+          <div class="lg:col-span-5 flex flex-col gap-3 font-sans">
+
+            <!-- 1. Email (Paling Atas) -->
+            <a href="mailto:tsalitssabila@gmail.com?subject=Undangan%20Interview%20/%20Diskusi%20Karir%20-%20Tsalits%20Sabila%20Fatah"
+              class="p-4 bg-[#141A26] border border-[rgba(255,255,255,0.1)] hover:border-[#60A5FA] hover:bg-[#172554] transition-all rounded flex items-center justify-between group">
+              <div class="flex items-center gap-3.5">
+                <div class="w-10 h-10 rounded-full bg-[#1E3A8A] flex items-center justify-center text-white shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+                </div>
+                <div class="overflow-hidden">
+                  <div class="text-[9px] tracking-widest uppercase text-[#A1A8B8]">Direct Email</div>
+                  <div class="text-xs sm:text-sm font-semibold text-white group-hover:text-[#60A5FA] transition-colors truncate">
+                    tsalitssabila@gmail.com
+                  </div>
+                </div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="text-[#A1A8B8] group-hover:text-[#60A5FA] group-hover:translate-x-1 transition-all shrink-0">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <!-- 2. LinkedIn (Baris Kedua) -->
+            <a href="https://www.linkedin.com/in/tsalitssabila" target="_blank" rel="noopener noreferrer"
+              class="p-4 bg-[#141A26] border border-[rgba(255,255,255,0.1)] hover:border-[#60A5FA] hover:bg-[#172554] transition-all rounded flex items-center justify-between group">
+              <div class="flex items-center gap-3.5">
+                <div class="w-10 h-10 rounded-full bg-[#1E3A8A] flex items-center justify-center text-white shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect width="4" height="12" x="2" y="9"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </div>
+                <div class="overflow-hidden">
+                  <div class="text-[9px] tracking-widest uppercase text-[#A1A8B8]">LinkedIn Profile</div>
+                  <div class="text-xs sm:text-sm font-semibold text-white group-hover:text-[#60A5FA] transition-colors truncate">
+                    in/tsalitssabila
+                  </div>
+                </div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="text-[#A1A8B8] group-hover:text-[#60A5FA] group-hover:translate-x-1 transition-all shrink-0">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <!-- 3. Instagram (Baris Terakhir) -->
+            <a href="https://www.instagram.com/tsalisabila_?mdxt=M3N0bXZzNG55emc4" target="_blank" rel="noopener noreferrer"
+              class="p-4 bg-[#141A26] border border-[rgba(255,255,255,0.1)] hover:border-[#60A5FA] hover:bg-[#172554] transition-all rounded flex items-center justify-between group">
+              <div class="flex items-center gap-3.5">
+                <div class="w-10 h-10 rounded-full bg-[#1E3A8A] flex items-center justify-center text-white shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </div>
+                <div class="overflow-hidden">
+                  <div class="text-[9px] tracking-widest uppercase text-[#A1A8B8]">Instagram</div>
+                  <div class="text-xs sm:text-sm font-semibold text-white group-hover:text-[#60A5FA] transition-colors truncate">
+                    @tsalisabila_
+                  </div>
+                </div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="text-[#A1A8B8] group-hover:text-[#60A5FA] group-hover:translate-x-1 transition-all shrink-0">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       6. SITE FOOTER (MINIMALIS & SEIMBANG)
+       ======================================================================== -->
+  <footer
+    class="py-8 px-6 lg:px-12 bg-[#050505] text-[#A1A8B8] border-t border-[rgba(255,255,255,0.08)] font-sans text-xs">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="text-[11px] text-[#A1A8B8]">
+        &copy; 2026. All rights reserved.
+      </div>
+
+      <a href="#" aria-label="Ascend to top"
+        class="w-10 h-10 rounded-full bg-[#1E3A8A] hover:bg-[#3B82F6] text-white flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 border border-slate-600/40">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="19" x2="12" y2="5"></line>
+          <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript Bundle -->
+  <script type="module" src="js/app.js"></script>
+
+</body>
+
+</html>

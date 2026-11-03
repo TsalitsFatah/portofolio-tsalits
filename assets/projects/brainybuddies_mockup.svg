@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#191817"/>
+      <stop offset="100%" stop-color="#11100F"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="800" fill="url(#bg3)"/>
+  
+  <!-- Ambient glow -->
+  <circle cx="850" cy="220" r="300" fill="#6B1D2F" opacity="0.15" filter="blur(60px)"/>
+  <circle cx="200" cy="550" r="260" fill="#5E1927" opacity="0.12" filter="blur(60px)"/>
+
+  <!-- Frame -->
+  <rect x="30" y="30" width="1140" height="740" fill="none" stroke="#332E2C" stroke-width="1"/>
+  <rect x="36" y="36" width="1128" height="728" fill="none" stroke="#6B1D2F" stroke-width="0.6" stroke-opacity="0.35"/>
+
+  <!-- Header -->
+  <text x="70" y="80" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" letter-spacing="4" fill="#A89F91">GAMIFIED LEARNING PLATFORM // INTERACTIVE FRONTEND</text>
+  <text x="1130" y="80" text-anchor="end" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" letter-spacing="3" fill="#6B1D2F">N° 05 · BRAINYBUDDIES</text>
+  <line x1="70" y1="100" x2="1130" y2="100" stroke="#2B2826" stroke-width="1"/>
+
+  <!-- Main Gamified Interface Display -->
+  <g transform="translate(70, 140)">
+    <rect width="1060" height="580" rx="4" fill="#141312" stroke="#332D2A" stroke-width="1"/>
+    <rect width="1060" height="44" rx="4" fill="#1A1817"/>
+    <circle cx="24" cy="22" r="5" fill="#6B1D2F"/>
+    <circle cx="42" cy="22" r="5" fill="#3D3734"/>
+    <circle cx="60" cy="22" r="5" fill="#3D3734"/>
+    <text x="90" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#8C8375" letter-spacing="2">BRAINYBUDDIES — INTERACTIVE QUIZ &amp; PROGRESS ENGINE</text>
+
+    <!-- Quiz Arena Mockup -->
+    <g transform="translate(60, 70)">
+      <!-- Progress Bar -->
+      <text x="0" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" letter-spacing="2" fill="#6B1D2F">MODULE 03 / COMPUTATIONAL LOGIC</text>
+      <text x="940" y="20" text-anchor="end" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#A89F91">SCORE: 850 PTS</text>
+      
+      <rect x="0" y="32" width="940" height="6" fill="#252220" rx="3"/>
+      <rect x="0" y="32" width="620" height="6" fill="#6B1D2F" rx="3"/>
+
+      <!-- Question Card -->
+      <g transform="translate(0, 60)">
+        <rect width="940" height="150" fill="#1A1918" stroke="#332D2A" rx="4"/>
+        <text x="40" y="50" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" letter-spacing="3" fill="#8C8375">QUESTION 08 OF 12</text>
+        <text x="40" y="90" font-family="'Cormorant Garamond', serif" font-size="28" fill="#F5F2EB">How does asynchronous event-loop scheduling preserve UI fluidity in Single Page Applications?</text>
+      </g>
+
+      <!-- Options 2x2 Grid -->
+      <g transform="translate(0, 240)">
+        <!-- Option A -->
+        <rect x="0" y="0" width="455" height="85" fill="#181716" stroke="#2E2A28" rx="4"/>
+        <circle cx="36" cy="42" r="14" fill="#242120"/>
+        <text x="32" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="12" fill="#EAE3D5">A</text>
+        <text x="65" y="47" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#C8B89E">By offloading tasks to the microtask queue</text>
+
+        <!-- Option B (Selected / Correct) -->
+        <rect x="485" y="0" width="455" height="85" fill="#211518" stroke="#6B1D2F" stroke-width="1.5" rx="4"/>
+        <circle cx="521" cy="42" r="14" fill="#6B1D2F"/>
+        <text x="517" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="12" fill="#F5F2EB">B</text>
+        <text x="550" y="40" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="12" fill="#F5F2EB">By prioritizing call stack execution while deferring I/O</text>
+        <text x="550" y="58" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#6B1D2F">✓ VERIFIED OPTIMAL PATH</text>
+
+        <!-- Option C -->
+        <rect x="0" y="105" width="455" height="85" fill="#181716" stroke="#2E2A28" rx="4"/>
+        <circle cx="36" cy="147" r="14" fill="#242120"/>
+        <text x="32" y="151" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="12" fill="#EAE3D5">C</text>
+        <text x="65" y="152" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#C8B89E">By freezing DOM repaint during heavy calculation</text>
+
+        <!-- Option D -->
+        <rect x="485" y="105" width="455" height="85" fill="#181716" stroke="#2E2A28" rx="4"/>
+        <circle cx="521" cy="147" r="14" fill="#242120"/>
+        <text x="517" y="151" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="12" fill="#EAE3D5">D</text>
+        <text x="550" y="152" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#C8B89E">By forcing synchronous thread locking</text>
+      </g>
+    </g>
+  </g>
+</svg>

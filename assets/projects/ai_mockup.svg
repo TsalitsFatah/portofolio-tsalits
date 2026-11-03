@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B1918"/>
+      <stop offset="100%" stop-color="#100F0E"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#2A2624" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+  
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <rect width="1200" height="800" fill="url(#grid)" opacity="0.6"/>
+  
+  <!-- Subtle Burgundy Ambient Glow -->
+  <circle cx="950" cy="250" r="320" fill="#6B1D2F" opacity="0.18" filter="blur(60px)"/>
+  <circle cx="250" cy="600" r="280" fill="#5E1927" opacity="0.12" filter="blur(60px)"/>
+
+  <!-- Border Editorial Frame -->
+  <rect x="30" y="30" width="1140" height="740" fill="none" stroke="#3D3734" stroke-width="1"/>
+  <rect x="36" y="36" width="1128" height="728" fill="none" stroke="#6B1D2F" stroke-width="0.6" stroke-opacity="0.4"/>
+
+  <!-- Header Info -->
+  <text x="70" y="80" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" letter-spacing="4" fill="#A89F91">SISTEM PAKAR // FORWARD CHAINING &amp; CERTAINTY FACTOR</text>
+  <text x="1130" y="80" text-anchor="end" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" letter-spacing="3" fill="#6B1D2F">SKRIPSI 2026 · TELKOM UNIVERSITY</text>
+  
+  <!-- Line divider -->
+  <line x1="70" y1="100" x2="1130" y2="100" stroke="#2F2B28" stroke-width="1"/>
+
+  <!-- Main Diagnostic Matrix Card -->
+  <g transform="translate(70, 140)">
+    <!-- Dashboard Container -->
+    <rect width="680" height="580" rx="4" fill="#141312" stroke="#332D2A" stroke-width="1"/>
+    
+    <!-- Top Bar -->
+    <rect width="680" height="44" rx="4" fill="#1A1817"/>
+    <circle cx="24" cy="22" r="5" fill="#6B1D2F"/>
+    <circle cx="42" cy="22" r="5" fill="#3D3734"/>
+    <circle cx="60" cy="22" r="5" fill="#3D3734"/>
+    <text x="90" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#8C8375" letter-spacing="2">DIAGNOSIS ENGINE — PYTHON FLASK &amp; REACT.JS INTERFACE</text>
+    
+    <!-- Neural Network / Feature Flow Representation -->
+    <g transform="translate(40, 70)">
+      <text x="0" y="20" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="28" fill="#F5F2EB">Diagnosis Penyakit Sapi Bali (Certainty Factor)</text>
+      <text x="0" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#8C8375">Gejala klinis, penalaran Forward Chaining, &amp; tingkat kepastian CF</text>
+
+      <!-- Curve Graphic -->
+      <path d="M 30 320 Q 120 280, 220 180 T 440 90 T 580 70" fill="none" stroke="#6B1D2F" stroke-width="3"/>
+      <path d="M 30 320 L 580 70" fill="none" stroke="#3D3734" stroke-dasharray="4 4" stroke-width="1"/>
+      <area d="M 30 320 Q 120 280, 220 180 T 440 90 T 580 70 L 580 320 Z" fill="#6B1D2F" fill-opacity="0.08"/>
+
+      <!-- Grid markers -->
+      <circle cx="220" cy="180" r="5" fill="#F5F2EB" stroke="#6B1D2F" stroke-width="2"/>
+      <text x="235" y="180" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#EAE3D5">Sens: 96.4%</text>
+
+      <circle cx="440" cy="90" r="5" fill="#F5F2EB" stroke="#6B1D2F" stroke-width="2"/>
+      <text x="455" y="90" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#EAE3D5">Spec: 94.8%</text>
+
+      <line x1="30" y1="320" x2="580" y2="320" stroke="#332D2A" stroke-width="1"/>
+      <line x1="30" y1="60" x2="30" y2="320" stroke="#332D2A" stroke-width="1"/>
+
+      <!-- Metric Pills -->
+      <g transform="translate(0, 360)">
+        <rect x="0" y="0" width="180" height="70" fill="#1B1918" stroke="#332D2A" rx="2"/>
+        <text x="16" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#8C8375" letter-spacing="1">ROC-AUC SCORE</text>
+        <text x="16" y="54" font-family="'Cormorant Garamond', serif" font-size="28" fill="#F5F2EB">0.968</text>
+
+        <rect x="200" y="0" width="180" height="70" fill="#1B1918" stroke="#332D2A" rx="2"/>
+        <text x="216" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#8C8375" letter-spacing="1">PRECISION RATE</text>
+        <text x="216" y="54" font-family="'Cormorant Garamond', serif" font-size="28" fill="#F5F2EB">95.2%</text>
+
+        <rect x="400" y="0" width="180" height="70" fill="#1B1918" stroke="#332D2A" rx="2"/>
+        <text x="416" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#8C8375" letter-spacing="1">RECALL / SENSITIVITY</text>
+        <text x="416" y="54" font-family="'Cormorant Garamond', serif" font-size="28" fill="#6B1D2F">97.1%</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Side Panel: Model Topology -->
+  <g transform="translate(780, 140)">
+    <rect width="350" height="580" rx="4" fill="#141312" stroke="#332D2A" stroke-width="1"/>
+    <rect width="350" height="44" rx="4" fill="#1A1817"/>
+    <text x="24" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#8C8375" letter-spacing="2">PIPELINE ARCHITECTURE</text>
+
+    <g transform="translate(24, 70)">
+      <!-- Stage 1 -->
+      <rect x="0" y="0" width="302" height="72" fill="#1A1817" stroke="#2F2B28" rx="2"/>
+      <text x="16" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" letter-spacing="2" fill="#6B1D2F">01 · INGESTION &amp; CLEANING</text>
+      <text x="16" y="46" font-family="'Cormorant Garamond', serif" font-size="18" fill="#F5F2EB">Biomedical Datasets</text>
+      <text x="16" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#8C8375">Outlier capping &amp; normalization</text>
+
+      <!-- Arrow down -->
+      <line x1="151" y1="72" x2="151" y2="95" stroke="#6B1D2F" stroke-width="1.5"/>
+
+      <!-- Stage 2 -->
+      <rect x="0" y="95" width="302" height="72" fill="#1A1817" stroke="#2F2B28" rx="2"/>
+      <text x="16" y="119" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" letter-spacing="2" fill="#6B1D2F">02 · BALANCING &amp; FEATURE SELECTION</text>
+      <text x="16" y="141" font-family="'Cormorant Garamond', serif" font-size="18" fill="#F5F2EB">SMOTE &amp; PCA Encoding</text>
+      <text x="16" y="155" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#8C8375">Class weighting &amp; variance ratio</text>
+
+      <!-- Arrow down -->
+      <line x1="151" y1="167" x2="151" y2="190" stroke="#6B1D2F" stroke-width="1.5"/>
+
+      <!-- Stage 3 -->
+      <rect x="0" y="190" width="302" height="72" fill="#1F1618" stroke="#6B1D2F" stroke-width="1.2" rx="2"/>
+      <text x="16" y="214" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" letter-spacing="2" fill="#EAE3D5">03 · CLASSIFIER MODEL</text>
+      <text x="16" y="236" font-family="'Cormorant Garamond', serif" font-size="18" fill="#F5F2EB">Supervised Ensemble &amp; SVM</text>
+      <text x="16" y="250" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#C8B89E">5-Fold Stratified Cross-Validation</text>
+
+      <!-- Arrow down -->
+      <line x1="151" y1="262" x2="151" y2="285" stroke="#6B1D2F" stroke-width="1.5"/>
+
+      <!-- Stage 4 -->
+      <rect x="0" y="285" width="302" height="72" fill="#1A1817" stroke="#2F2B28" rx="2"/>
+      <text x="16" y="309" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" letter-spacing="2" fill="#6B1D2F">04 · CLINICAL REASONING</text>
+      <text x="16" y="331" font-family="'Cormorant Garamond', serif" font-size="18" fill="#F5F2EB">SHAP Explainability</text>
+      <text x="16" y="345" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#8C8375">Interpretable medical score output</text>
+
+      <!-- Quote -->
+      <g transform="translate(0, 390)">
+        <rect x="0" y="0" width="302" height="80" fill="#161413" stroke="#2A2624" rx="2"/>
+        <text x="16" y="28" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="15" fill="#EAE3D5">“Precision in healthcare algorithms</text>
+        <text x="16" y="48" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="15" fill="#EAE3D5">is a matter of life-saving ethics.”</text>
+        <text x="16" y="68" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" letter-spacing="2" fill="#6B1D2F">— TSALITS S. FATAH</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organization &amp; Kepanitiaan — Tsalits Sabila Fatah</title>
+  
+  <meta name="description" content="Rekam jejak organisasi, kepanitiaan, tata kelola keuangan, dan Master of Ceremony oleh Tsalits Sabila Fatah.">
+  <meta name="theme-color" content="#050505">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: '#050505',
+            surface: '#0D0F14',
+            'surface-2': '#141A26',
+            navy: {
+              DEFAULT: '#1E3A8A',
+              deep: '#172554'
+            },
+            'blue-accent': '#60A5FA',
+            primary: { DEFAULT: '#1E3A8A', dark: '#172554', light: '#60A5FA' },
+            accent: { DEFAULT: '#60A5FA', hover: '#93C5FD' },
+            ivory: { DEFAULT: '#050505', light: '#0D0F14', warm: '#141A26' },
+            charcoal: { DEFAULT: '#FFFFFF', soft: '#A1A8B8', muted: '#64748B' },
+            burgundy: { DEFAULT: '#60A5FA', dark: '#172554', light: '#93C5FD' },
+            beige: { DEFAULT: '#141A26', dark: '#1E293B' }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', '"Playfair Display"', 'Georgia', 'serif'],
+            display: ['"Playfair Display"', '"Cormorant Garamond"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- GSAP & Plugins for Horizontal Card Track -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#050505] text-[#FFFFFF] selection:bg-[#1E3A8A] selection:text-white">
+
+  <div class="grain-overlay" aria-hidden="true"></div>
+  <div class="custom-cursor-dot" aria-hidden="true"></div>
+  <div class="custom-cursor-ring" aria-hidden="true"></div>
+
+  <!-- Header Navigation -->
+  <header class="site-header py-5 md:py-7 px-6 lg:px-12 fixed top-0 left-0 w-full z-50 bg-[#050505]/85 backdrop-blur-md border-b border-[rgba(255,255,255,0.06)]">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="font-serif tracking-widest text-sm font-semibold text-white hover:text-[#60A5FA] transition-colors shrink-0">
+        TSALITS
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-10 font-sans mx-auto" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="projects.html" class="nav-link">Project</a>
+        <a href="organization.html" class="nav-link active">Organization</a>
+        <a href="index.html#skills" class="nav-link">Skills</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="w-16 hidden lg:block"></div>
+
+      <!-- Mobile Menu Toggle Button (Visible only on mobile) -->
+      <div class="lg:hidden ml-auto">
+        <button id="mobile-menu-toggle" class="p-2 text-white hover:text-[#60A5FA] transition-colors"
+          aria-label="Toggle navigation menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Fullscreen Overlay -->
+  <div id="mobile-menu-overlay" class="mobile-menu-overlay lg:hidden" aria-hidden="true">
+    <div>
+      <div class="text-[10px] tracking-widest uppercase text-[#60A5FA] font-sans font-semibold mb-6">
+        Portfolio Navigation
+      </div>
+      <nav class="space-y-4 font-serif">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="experience.html" class="mobile-nav-link">Experience</a>
+        <a href="projects.html" class="mobile-nav-link">Project</a>
+        <a href="organization.html" class="mobile-nav-link text-[#60A5FA]">Organization</a>
+        <a href="index.html#skills" class="mobile-nav-link font-sans text-xl">Skills</a>
+        <a href="index.html#contact" class="mobile-nav-link font-sans text-xl">Contact</a>
+      </nav>
+    </div>
+
+    <div class="pt-8 border-t border-[rgba(255,255,255,0.08)]">
+      <div class="text-xs text-[#A1A8B8] font-sans">
+        Creative Technologist &middot; Luxury Editorial Design
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Horizontal Track Section (Pinned Viewport Experience) -->
+  <main class="pt-24 md:pt-28">
+    
+    <!-- Intro Banner -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-12 pt-8 pb-4">
+      <!-- Back Link -->
+      <div class="mb-6">
+        <a href="index.html"
+          class="text-xs uppercase tracking-widest text-[#60A5FA] font-sans font-semibold inline-flex items-center gap-2 hover:-translate-x-1.5 transition-transform">
+          ← Return to Overview
+        </a>
+      </div>
+
+      <div class="border-b border-[rgba(255,255,255,0.08)] pb-8">
+        <h1 class="editorial-title text-5xl sm:text-7xl md:text-8xl text-white leading-[0.92] tracking-tight">
+          Organization <span class="editorial-italic font-serif text-[#60A5FA]">&amp; Kepanitiaan</span>
+        </h1>
+      </div>
+    </section>
+
+    <!-- Horizontal Track Pinned Section (GSAP Vault Style) -->
+    <div id="horizontal-track-section" class="horizontal-track-section">
+      <div class="track-pin-viewport">
+        
+        <!-- The Moving Track of Cards -->
+        <div id="track-wrapper" class="track-wrapper">
+          <!-- Suspension Cable / Cord Line aligned with card tops -->
+          <div class="track-cord-line" aria-hidden="true"></div>
+          
+          <!-- Card 1: Sekretaris Kementerian Keuangan, BEM KEMA Telkom University Surabaya -->
+          <article class="track-card group" data-index="1">
+            <div class="track-card-peg" aria-hidden="true"></div>
+            
+            <div class="track-card-inner">
+              <div class="track-card-img-wrap js-lightbox-trigger" 
+                   data-img="assets/organization/sertif_bem1.png" 
+                   data-images='["assets/organization/sertif_bem1.png", "assets/organization/sertif_bem2.png"]'
+                   data-labels='["Sertifikat Periode 1 (2023 — 2024)", "Sertifikat Periode 2 (2024)"]'
+                   data-title="Sekretaris Kementerian Keuangan — BEM KEMA Telkom University Surabaya">
+                <img src="assets/organization/sertif_bem1.png" alt="Sertifikat Sekretaris Kementerian Keuangan BEM KEMA" class="track-card-img" loading="lazy">
+                <div class="track-card-zoom-badge font-sans">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                  <span>Lihat Sertifikat (2)</span>
+                </div>
+              </div>
+
+            <div class="track-card-body font-sans">
+              <div class="flex items-center justify-between mb-3 pb-2 border-b border-[rgba(255,255,255,0.08)]">
+                <span class="font-serif italic text-xl text-[#60A5FA]">I.</span>
+                <span class="text-[10px] tracking-wider uppercase font-semibold text-[#A1A8B8]">Pemerintahan Mahasiswa</span>
+                <span class="text-xs font-semibold text-[#60A5FA]">2023 — 2024</span>
+              </div>
+
+              <h2 class="font-serif text-2xl text-white mb-1 group-hover:text-[#60A5FA] transition-colors leading-snug">
+                Sekretaris Kementerian Keuangan
+              </h2>
+              <div class="text-xs font-semibold uppercase tracking-wider text-[#A1A8B8] mb-4">
+                BEM KEMA Telkom University Surabaya
+              </div>
+
+              <div class="mt-auto pt-3 border-t border-[rgba(255,255,255,0.08)] flex flex-wrap gap-1.5 text-[10px] uppercase tracking-wider text-[#A1A8B8]">
+                <span class="px-2 py-0.5 bg-[#141A26] rounded">Tata Kelola Keuangan</span>
+                <span class="px-2 py-0.5 bg-[#141A26] rounded">Administrasi Resmi</span>
+                <span class="px-2 py-0.5 bg-[#141A26] rounded">Inventaris</span>
+              </div>
+            </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Koordinator Divisi Konsumsi dan Medis, Kepanitiaan Volunteer BEM Mengajar -->
+          <article class="track-card group" data-index="2">
+            <div class="track-card-peg" aria-hidden="true"></div>
+            
+            <div class="track-card-inner">
+              <div class="track-card-img-wrap js-lightbox-trigger" data-img="assets/organization/sertif_vbm.png" data-title="Koordinator Divisi Konsumsi dan Medis — Volunteer BEM Mengajar">
+              <img src="assets/organization/sertif_vbm.png" alt="Sertifikat Koordinator Divisi Konsumsi dan Medis Volunteer BEM Mengajar" class="track-card-img" loading="lazy">
+              <div class="track-card-zoom-badge font-sans">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                <span>Lihat Sertifikat</span>
+              </div>
+            </div>
+
+            <div class="track-card-body font-sans">
+              <div class="flex items-center justify-between mb-3 pb-2 border-b border-[rgba(255,255,255,0.08)]">
+                <span class="font-serif italic text-xl text-[#60A5FA]">II.</span>
+                <span class="text-[10px] tracking-wider uppercase font-semibold text-[#A1A8B8]">Pengabdian Masyarakat</span>
+                <span class="text-xs font-semibold text-[#60A5FA]">2024</span>
+              </div>
+
+              <h2 class="font-serif text-2xl text-white mb-1 group-hover:text-[#60A5FA] transition-colors leading-snug">
+                Koordinator Divisi Konsumsi &amp; Medis
+              </h2>
+              <div class="text-xs font-semibold uppercase tracking-wider text-[#A1A8B8] mb-4">
+                Kepanitiaan Volunteer BEM Mengajar
+              </div>
+
+              <div class="mt-auto pt-3 border-t border-[rgba(255,255,255,0.08)] flex flex-wrap gap-1.5 text-[10px] uppercase tracking-wider text-[#A1A8B8]">
+                <span class="px-2 py-0.5 bg-[#141A26] rounded">Leadership</span>
+                <span class="px-2 py-0.5 bg-[#141A26] rounded">Konsumsi &amp; Medis</span>
+                <span class="px-2 py-0.5 bg-[#141A26] rounded">Pengabdian Sosial</span>
+              </div>
+            </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Bendahara, Kepanitiaan Pekan Ilmiah Mahasiswa -->
+          <article class="track-card group" data-index="3">
+            <div class="track-card-peg" aria-hidden="true"></div>
+            
+            <div class="track-card-inner">
+              <div class="track-card-img-wrap js-lightbox-trigger" data-img="assets/organization/sertif_pim.png" data-title="Bendahara — Kepanitiaan Pekan Ilmiah Mahasiswa (PIM)">
+              <img src="assets/organization/sertif_pim.png" alt="Sertifikat Bendahara Kepanitiaan Pekan Ilmiah Mahasiswa" class="track-card-img" loading="lazy">
+              <div class="track-card-zoom-badge font-sans">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                <span>Lihat Sertifikat</span>
+              </div>
+            </div>
+
+            <div class="track-card-body font-sans">
+              <div class="flex items-center justify-between mb-3 pb-2 border-b border-[rgba(255,255,255,0.08)]">
+                <span class="font-serif italic text-xl text-[#60A5FA]">III.</span>
+                <span class="text-[10px] tracking-wider uppercase font-semibold text-[#A1A8B8]">Kompetisi Akademis</span>
+                <span class="text-xs font-semibold text-[#60A5FA]">2024</span>
+              </div>
+
+              <h2 class="font-serif text-2xl text-white mb-1 group-hover:text-[#60A5FA] transition-colors leading-snug">
+                Bendahara Pelaksana
+              </h2>
+              <div class="text-xs font-semibold uppercase tracking-wider text-[#A1A8B8] mb-4">
+                Kepanitiaan Pekan Ilmiah Mahasiswa
+              </div>
+
+              <div class="mt-auto pt-3 border-t border-[rgba(255,255,255,0.08)] flex flex-wrap gap-1.5 text-[10px] uppercase tracking-wider text-[#A1A8B8]">
+                <span class="px-2 py-0.5 bg-[#141A26] rounded">RAB Kegiatan</span>
+                <span class="px-2 py-0.5 bg-[#141A26] rounded">Audit Finansial</span>
+                <span class="px-2 py-0.5 bg-[#141A26] rounded">Akuntabilitas</span>
+              </div>
+            </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Bendahara dan MC, Kepanitiaan Diklat Panitia PKKMB dan Staf Muda BEM -->
+          <article class="track-card group" data-index="4">
+            <div class="track-card-peg" aria-hidden="true"></div>
+            
+            <div class="track-card-inner">
+              <div class="track-card-img-wrap js-lightbox-trigger" 
+                   data-img="assets/organization/MC.jpeg" 
+                   data-images='["assets/organization/MC.jpeg", "assets/organization/MC2.JPG", "assets/organization/MC3.JPG", "assets/organization/mc4.jpg"]'
+                   data-labels='["Dokumentasi MC 1", "Dokumentasi MC 2", "Dokumentasi MC 3", "Dokumentasi MC 4"]'
+                   data-title="Bendahara &amp; Master of Ceremony (MC) — Diklat PKKMB &amp; Staf Muda BEM">
+                <img src="assets/organization/MC.jpeg" alt="Dokumentasi Kegiatan Bendahara dan MC Diklat PKKMB" class="track-card-img" loading="lazy">
+                <div class="track-card-zoom-badge font-sans">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                  <span>Lihat Dokumentasi (4)</span>
+                </div>
+              </div>
+
+            <div class="track-card-body font-sans">
+              <div class="flex items-center justify-between mb-3 pb-2 border-b border-[rgba(255,255,255,0.08)]">
+                <span class="font-serif italic text-xl text-[#60A5FA]">IV.</span>
+                <span class="text-[10px] tracking-wider uppercase font-semibold text-[#A1A8B8]">Kaderisasi &amp; Protokol</span>
+                <span class="text-xs font-semibold text-[#60A5FA]">2024</span>
+              </div>
+
+              <h2 class="font-serif text-2xl text-white mb-1 group-hover:text-[#60A5FA] transition-colors leading-snug">
+                Bendahara &amp; Master of Ceremony (MC)
+              </h2>
+              <div class="text-xs font-semibold uppercase tracking-wider text-[#A1A8B8] mb-4">
+                Diklat PKKMB &amp; Staf Muda BEM
+              </div>
+
+              <div class="mt-auto pt-3 border-t border-[rgba(255,255,255,0.08)] flex flex-wrap gap-1.5 text-[10px] uppercase tracking-wider text-[#A1A8B8]">
+                <span class="px-2 py-0.5 bg-[#141A26] rounded">Master of Ceremony</span>
+                <span class="px-2 py-0.5 bg-[#141A26] rounded">Public Speaking</span>
+                <span class="px-2 py-0.5 bg-[#141A26] rounded">Alokasi Dana</span>
+              </div>
+            </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Bendahara, Kepanitiaan Seminar How to Handle a Quarter Life Crisis -->
+          <article class="track-card group" data-index="5">
+            <div class="track-card-peg" aria-hidden="true"></div>
+            
+            <div class="track-card-inner">
+              <div class="track-card-img-wrap js-lightbox-trigger" data-img="assets/organization/seminar_mental_health.png" data-title="Bendahara — Kepanitiaan Seminar How to Handle a Quarter Life Crisis">
+              <img src="assets/organization/seminar_mental_health.png" alt="Sertifikat Bendahara Seminar How to Handle a Quarter Life Crisis" class="track-card-img" loading="lazy">
+              <div class="track-card-zoom-badge font-sans">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                <span>Lihat Sertifikat</span>
+              </div>
+            </div>
+
+            <div class="track-card-body font-sans">
+              <div class="flex items-center justify-between mb-3 pb-2 border-b border-[rgba(255,255,255,0.08)]">
+                <span class="font-serif italic text-xl text-[#60A5FA]">V.</span>
+                <span class="text-[10px] tracking-wider uppercase font-semibold text-[#A1A8B8]">Seminar Kesehatan Mental</span>
+                <span class="text-xs font-semibold text-[#60A5FA]">2024</span>
+              </div>
+
+              <h2 class="font-serif text-2xl text-white mb-1 group-hover:text-[#60A5FA] transition-colors leading-snug">
+                Bendahara Seminar
+              </h2>
+              <div class="text-xs font-semibold uppercase tracking-wider text-[#A1A8B8] mb-4">
+                How to Handle a Quarter Life Crisis
+              </div>
+
+              <div class="mt-auto pt-3 border-t border-[rgba(255,255,255,0.08)] flex flex-wrap gap-1.5 text-[10px] uppercase tracking-wider text-[#A1A8B8]">
+                <span class="px-2 py-0.5 bg-[#141A26] rounded">Seminar BEM</span>
+                <span class="px-2 py-0.5 bg-[#141A26] rounded">Pencatatan Finansial</span>
+                <span class="px-2 py-0.5 bg-[#141A26] rounded">LPJ Terbuka</span>
+              </div>
+            </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Bendahara, Kepanitiaan Webinar Beasiswa Master’s Degree -->
+          <article class="track-card group" data-index="6">
+            <div class="track-card-peg" aria-hidden="true"></div>
+            
+            <div class="track-card-inner">
+              <div class="track-card-img-wrap js-lightbox-trigger" data-img="assets/organization/seminar_scholarship.png" data-title="Bendahara — Kepanitiaan Webinar Beasiswa Master’s Degree">
+              <img src="assets/organization/seminar_scholarship.png" alt="Sertifikat Bendahara Webinar Beasiswa Master’s Degree" class="track-card-img" loading="lazy">
+              <div class="track-card-zoom-badge font-sans">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                <span>Lihat Sertifikat</span>
+              </div>
+            </div>
+
+            <div class="track-card-body font-sans">
+              <div class="flex items-center justify-between mb-3 pb-2 border-b border-[rgba(255,255,255,0.08)]">
+                <span class="font-serif italic text-xl text-[#60A5FA]">VI.</span>
+                <span class="text-[10px] tracking-wider uppercase font-semibold text-[#A1A8B8]">Career Development</span>
+                <span class="text-xs font-semibold text-[#60A5FA]">2024</span>
+              </div>
+
+              <h2 class="font-serif text-2xl text-white mb-1 group-hover:text-[#60A5FA] transition-colors leading-snug">
+                Bendahara Webinar
+              </h2>
+              <div class="text-xs font-semibold uppercase tracking-wider text-[#A1A8B8] mb-4">
+                Webinar Beasiswa Master’s Degree
+              </div>
+
+              <div class="mt-auto pt-3 border-t border-[rgba(255,255,255,0.08)] flex flex-wrap gap-1.5 text-[10px] uppercase tracking-wider text-[#A1A8B8]">
+                <span class="px-2 py-0.5 bg-[#141A26] rounded">CDC Telkom</span>
+                <span class="px-2 py-0.5 bg-[#141A26] rounded">Beasiswa Luar Negeri</span>
+                <span class="px-2 py-0.5 bg-[#141A26] rounded">Manajemen Dana</span>
+              </div>
+            </div>
+            </div>
+          </article>
+
+          <!-- Card 7: Anggota Divisi Konsumsi dan Medis, Kepanitiaan TUS Championship -->
+          <article class="track-card group" data-index="7">
+            <div class="track-card-peg" aria-hidden="true"></div>
+            
+            <div class="track-card-inner">
+              <div class="track-card-img-wrap js-lightbox-trigger" data-img="assets/organization/sertif_tus.png" data-title="Divisi Konsumsi dan Medis — Telkom University Surabaya Championship 2024">
+              <img src="assets/organization/sertif_tus.png" alt="Sertifikat Kepanitiaan TUS Championship" class="track-card-img" loading="lazy">
+              <div class="track-card-zoom-badge font-sans">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                <span>Lihat Sertifikat</span>
+              </div>
+            </div>
+
+            <div class="track-card-body font-sans">
+              <div class="flex items-center justify-between mb-3 pb-2 border-b border-[rgba(255,255,255,0.08)]">
+                <span class="font-serif italic text-xl text-[#60A5FA]">VII.</span>
+                <span class="text-[10px] tracking-wider uppercase font-semibold text-[#A1A8B8]">Turnamen Olahraga</span>
+                <span class="text-xs font-semibold text-[#60A5FA]">2024</span>
+              </div>
+
+              <h2 class="font-serif text-2xl text-white mb-1 group-hover:text-[#60A5FA] transition-colors leading-snug">
+                Divisi Konsumsi &amp; Medis
+              </h2>
+              <div class="text-xs font-semibold uppercase tracking-wider text-[#A1A8B8] mb-4">
+                Kepanitiaan TUS Championship
+              </div>
+
+              <div class="mt-auto pt-3 border-t border-[rgba(255,255,255,0.08)] flex flex-wrap gap-1.5 text-[10px] uppercase tracking-wider text-[#A1A8B8]">
+                <span class="px-2 py-0.5 bg-[#141A26] rounded">TUS Championship</span>
+                <span class="px-2 py-0.5 bg-[#141A26] rounded">Logistik Turnamen</span>
+                <span class="px-2 py-0.5 bg-[#141A26] rounded">Medis Dasar</span>
+              </div>
+            </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Track Progress Bar at Bottom -->
+        <div class="px-6 lg:px-12 pb-2">
+          <div class="max-w-7xl mx-auto flex items-center gap-4">
+            <span class="text-[10px] uppercase tracking-widest text-[#A1A8B8] font-mono">01</span>
+            <div class="flex-grow h-[2px] bg-[rgba(255,255,255,0.08)] relative overflow-hidden rounded-full">
+              <div id="track-progress-fill" class="track-progress-fill absolute top-0 left-0 h-full w-[14%] bg-gradient-to-r from-[#1E3A8A] to-[#60A5FA]"></div>
+            </div>
+            <span class="text-[10px] uppercase tracking-widest text-[#A1A8B8] font-mono">07</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Lightbox Modal for Full Certificate & Documentation Gallery Inspection -->
+  <div id="cert-lightbox" class="cert-lightbox" role="dialog" aria-modal="true" aria-label="Media Preview">
+    <div class="cert-lightbox-inner">
+      <!-- Modal Top Bar -->
+      <div class="w-full flex items-center justify-between pb-3 mb-2 border-b border-[rgba(255,255,255,0.1)] text-xs text-[#A1A8B8] font-sans">
+        <div class="flex items-center gap-3 truncate max-w-[70vw]">
+          <span id="cert-lightbox-title" class="font-serif text-base text-white truncate">Sertifikat / Dokumentasi</span>
+          <span id="cert-lightbox-counter" class="px-2 py-0.5 bg-[#141A26] border border-[rgba(255,255,255,0.15)] text-[#60A5FA] rounded text-[11px] font-mono hidden">1 / 2</span>
+        </div>
+        <button id="cert-lightbox-close" aria-label="Tutup preview" class="px-3 py-1 bg-[#141A26] hover:bg-[#1E3A8A] text-white rounded text-xs transition-colors flex items-center gap-1.5">
+          <span>Tutup</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <!-- Image Display with Next & Prev Arrow Controls -->
+      <div class="relative flex items-center justify-center max-w-full group/gallery">
+        <!-- Prev Button (<) -->
+        <button id="cert-lightbox-prev" aria-label="Sebelumnya" class="absolute left-2 md:-left-14 z-30 w-11 h-11 rounded-full bg-[#0D0F14]/90 border border-[rgba(255,255,255,0.2)] text-white hover:text-[#60A5FA] hover:border-[#60A5FA] hover:bg-[#141A26] flex items-center justify-center transition-all shadow-2xl backdrop-blur-md hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+
+        <img id="cert-lightbox-img" src="" alt="Pratinjau Media" class="cert-lightbox-img transition-opacity duration-200">
+
+        <!-- Next Button (>) -->
+        <button id="cert-lightbox-next" aria-label="Selanjutnya" class="absolute right-2 md:-right-14 z-30 w-11 h-11 rounded-full bg-[#0D0F14]/90 border border-[rgba(255,255,255,0.2)] text-white hover:text-[#60A5FA] hover:border-[#60A5FA] hover:bg-[#141A26] flex items-center justify-center transition-all shadow-2xl backdrop-blur-md hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+
+      <!-- Caption Sub-label -->
+      <div id="cert-lightbox-sublabel" class="mt-2 text-xs text-[#A1A8B8] font-sans text-center hidden"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="py-8 px-6 lg:px-12 bg-[#050505] text-[#A1A8B8] border-t border-[rgba(255,255,255,0.08)] font-sans text-xs">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="text-[11px] text-[#A1A8B8]">&copy; 2026 Tsalits Sabila Fatah. All rights reserved.</div>
+      <a 
+        href="#" 
+        aria-label="Kembali ke atas"
+        class="w-10 h-10 rounded-full bg-[#1E3A8A] hover:bg-[#3B82F6] text-white flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 border border-slate-600/40"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="19" x2="12" y2="5"></line>
+          <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Core App Scripts & GSAP Track Initializer -->
+  <script type="module" src="js/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Gallery Lightbox setup (Multi-photo & Certificate support)
+      const lightbox = document.getElementById('cert-lightbox');
+      const lightboxImg = document.getElementById('cert-lightbox-img');
+      const lightboxTitle = document.getElementById('cert-lightbox-title');
+      const lightboxClose = document.getElementById('cert-lightbox-close');
+      const lightboxPrev = document.getElementById('cert-lightbox-prev');
+      const lightboxNext = document.getElementById('cert-lightbox-next');
+      const lightboxCounter = document.getElementById('cert-lightbox-counter');
+      const lightboxSublabel = document.getElementById('cert-lightbox-sublabel');
+
+      let currentGalleryImages = [];
+      let currentGalleryLabels = [];
+      let currentGalleryIndex = 0;
+
+      function renderCurrentImage(animate = true) {
+        if (!currentGalleryImages.length || !lightboxImg) return;
+        
+        const targetSrc = currentGalleryImages[currentGalleryIndex];
+        
+        if (animate) {
+          lightboxImg.style.opacity = '0.35';
+          setTimeout(() => {
+            lightboxImg.src = targetSrc;
+            lightboxImg.style.opacity = '1';
+          }, 100);
+        } else {
+          lightboxImg.src = targetSrc;
+          lightboxImg.style.opacity = '1';
+        }
+
+        // Handle navigation controls visibility
+        if (currentGalleryImages.length > 1) {
+          if (lightboxCounter) {
+            lightboxCounter.textContent = `${currentGalleryIndex + 1} / ${currentGalleryImages.length}`;
+            lightboxCounter.classList.remove('hidden');
+          }
+          if (lightboxPrev) lightboxPrev.classList.remove('hidden');
+          if (lightboxNext) lightboxNext.classList.remove('hidden');
+
+          if (lightboxSublabel) {
+            const label = currentGalleryLabels[currentGalleryIndex];
+            if (label) {
+              lightboxSublabel.textContent = label;
+              lightboxSublabel.classList.remove('hidden');
+            } else {
+              lightboxSublabel.classList.add('hidden');
+            }
+          }
+        } else {
+          if (lightboxCounter) lightboxCounter.classList.add('hidden');
+          if (lightboxPrev) lightboxPrev.classList.add('hidden');
+          if (lightboxNext) lightboxNext.classList.add('hidden');
+          if (lightboxSublabel) lightboxSublabel.classList.add('hidden');
+        }
+      }
+
+      function nextImage() {
+        if (currentGalleryImages.length <= 1) return;
+        currentGalleryIndex = (currentGalleryIndex + 1) % currentGalleryImages.length;
+        renderCurrentImage(true);
+      }
+
+      function prevImage() {
+        if (currentGalleryImages.length <= 1) return;
+        currentGalleryIndex = (currentGalleryIndex - 1 + currentGalleryImages.length) % currentGalleryImages.length;
+        renderCurrentImage(true);
+      }
+
+      if (lightboxNext) lightboxNext.addEventListener('click', (e) => { e.stopPropagation(); nextImage(); });
+      if (lightboxPrev) lightboxPrev.addEventListener('click', (e) => { e.stopPropagation(); prevImage(); });
+
+      document.querySelectorAll('.js-lightbox-trigger').forEach(trigger => {
+        trigger.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const title = trigger.getAttribute('data-title') || 'Dokumentasi / Sertifikat';
+          const singleImg = trigger.getAttribute('data-img');
+          const imagesAttr = trigger.getAttribute('data-images');
+          const labelsAttr = trigger.getAttribute('data-labels');
+
+          if (imagesAttr) {
+            try {
+              currentGalleryImages = JSON.parse(imagesAttr);
+            } catch {
+              currentGalleryImages = [singleImg];
+            }
+          } else if (singleImg) {
+            currentGalleryImages = [singleImg];
+          } else {
+            currentGalleryImages = [];
+          }
+
+          if (labelsAttr) {
+            try {
+              currentGalleryLabels = JSON.parse(labelsAttr);
+            } catch {
+              currentGalleryLabels = [];
+            }
+          } else {
+            currentGalleryLabels = [];
+          }
+
+          currentGalleryIndex = 0;
+
+          if (currentGalleryImages.length && lightbox && lightboxTitle) {
+            lightboxTitle.textContent = title;
+            renderCurrentImage(false);
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+          }
+        });
+      });
+
+      function closeLightbox() {
+        if (!lightbox) return;
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+      if (lightbox) {
+        lightbox.addEventListener('click', (e) => {
+          if (e.target === lightbox) closeLightbox();
+        });
+      }
+      window.addEventListener('keydown', (e) => {
+        if (!lightbox || !lightbox.classList.contains('active')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowRight') nextImage();
+        if (e.key === 'ArrowLeft') prevImage();
+      });
+
+      // 2. GSAP Horizontal Card Track (Vault Physics & Momentum)
+      if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined' && typeof Draggable !== 'undefined') {
+        gsap.registerPlugin(ScrollTrigger, Draggable);
+
+        const trackSection = document.getElementById('horizontal-track-section');
+        const trackWrapper = document.getElementById('track-wrapper');
+        const cards = gsap.utils.toArray('.track-card');
+        const progressFill = document.getElementById('track-progress-fill');
+        const counterCurrent = document.getElementById('track-counter-current');
+        const totalCards = cards.length;
+
+        if (trackSection && trackWrapper && cards.length) {
+          function getScrollDistance() {
+            // Precise scroll distance stopping EXACTLY when the last card reaches the viewport right boundary
+            if (!cards.length) return 0;
+            const lastCard = cards[cards.length - 1];
+            const paddingRight = parseFloat(window.getComputedStyle(trackWrapper).paddingRight) || 48;
+            const contentWidth = lastCard.offsetLeft + lastCard.offsetWidth + paddingRight;
+            return Math.max(0, contentWidth - window.innerWidth);
+          }
+
+          let scrollTween = gsap.to(trackWrapper, {
+            x: () => -getScrollDistance(),
+            ease: "none",
+            scrollTrigger: {
+              trigger: trackSection,
+              pin: true,
+              scrub: 0.9,
+              start: "top top",
+              end: () => "+=" + getScrollDistance(),
+              invalidateOnRefresh: true,
+              onUpdate: (self) => {
+                const p = Math.min(1, Math.max(0, self.progress));
+                if (progressFill) {
+                  progressFill.style.width = (p * 100) + '%';
+                }
+                const currentIndex = Math.min(totalCards, Math.max(1, Math.round(p * (totalCards - 1)) + 1));
+                if (counterCurrent) {
+                  counterCurrent.textContent = String(currentIndex).padStart(2, '0');
+                }
+
+                // Smooth & gentle hanging clothesline momentum sway based on scroll velocity
+                const vel = self.getVelocity();
+                const angle = gsap.utils.clamp(-3, 3, vel * 0.001);
+                gsap.to(cards, {
+                  rotation: angle,
+                  duration: 0.4,
+                  ease: "power2.out",
+                  overwrite: "auto"
+                });
+              },
+              onScrubComplete: () => {
+                // Smoothly settle back without erratic vibrations
+                gsap.to(cards, {
+                  rotation: 0,
+                  duration: 0.8,
+                  ease: "power2.out",
+                  overwrite: "auto",
+                  onComplete: () => {
+                    resumeAmbientBreeze();
+                  }
+                });
+              }
+            }
+          });
+
+          // Draggable interaction
+          let draggableInstance = Draggable.create(trackWrapper, {
+            type: "x",
+            bounds: {
+              minX: -getScrollDistance(),
+              maxX: 0
+            },
+            edgeResistance: 0.85,
+            inertia: true,
+            cursor: "grab",
+            activeCursor: "grabbing",
+            onPress: function() {
+              trackWrapper.classList.add('is-dragging');
+              pauseAmbientBreeze();
+              this.applyBounds({
+                minX: -getScrollDistance(),
+                maxX: 0
+              });
+            },
+            onDrag: function() {
+              syncTrackPosition(this.x);
+            },
+            onThrowUpdate: function() {
+              syncTrackPosition(this.x);
+            },
+            onDragEnd: function() {
+              trackWrapper.classList.remove('is-dragging');
+              gsap.to(cards, {
+                rotation: 0,
+                duration: 0.8,
+                ease: "power2.out",
+                overwrite: "auto",
+                onComplete: () => {
+                  resumeAmbientBreeze();
+                }
+              });
+            }
+          })[0];
+
+          function syncTrackPosition(currentX) {
+            const maxDist = getScrollDistance();
+            if (maxDist <= 0) return;
+            const progress = gsap.utils.clamp(0, 1, -currentX / maxDist);
+            
+            if (progressFill) {
+              progressFill.style.width = (progress * 100) + '%';
+            }
+            const currentIndex = Math.min(totalCards, Math.max(1, Math.round(progress * (totalCards - 1)) + 1));
+            if (counterCurrent) {
+              counterCurrent.textContent = String(currentIndex).padStart(2, '0');
+            }
+
+            // Sway gently in drag direction
+            const dir = draggableInstance.getDirection() === "left" ? -2.5 : 2.5;
+            gsap.to(cards, {
+              rotation: dir,
+              duration: 0.35,
+              ease: "power2.out",
+              overwrite: "auto"
+            });
+
+            // Sync window scroll with drag
+            const st = scrollTween.scrollTrigger;
+            if (st) {
+              const targetY = st.start + progress * (st.end - st.start);
+              window.scrollTo({ top: targetY, behavior: 'instant' });
+            }
+          }
+
+          // -------------------------------------------------------------
+          // Realistic Hanging Laundry Physics & Butter-Smooth Breeze
+          // -------------------------------------------------------------
+          const idleTweens = [];
+          let isDraggingOrScrolling = false;
+
+          function startCardIdleBreeze(card, index) {
+            if (isDraggingOrScrolling) return;
+            const duration = 3.2 + (index % 3) * 0.5;
+            const swingAngle = 0.5 + (index % 2) * 0.3; // Very subtle ±0.5° - 0.8° sway
+
+            if (idleTweens[index]) idleTweens[index].kill();
+
+            idleTweens[index] = gsap.to(card, {
+              rotation: swingAngle,
+              duration: duration,
+              ease: "sine.inOut",
+              yoyo: true,
+              repeat: -1,
+              delay: index * 0.25
+            });
+          }
+
+          function pauseAmbientBreeze() {
+            isDraggingOrScrolling = true;
+            idleTweens.forEach(t => t && t.pause());
+          }
+
+          function resumeAmbientBreeze() {
+            isDraggingOrScrolling = false;
+            cards.forEach((card, i) => {
+              if (Math.abs(gsap.getProperty(card, "rotation")) < 0.2) {
+                startCardIdleBreeze(card, i);
+              }
+            });
+          }
+
+          // Initialize ambient gentle breeze across all hanging items
+          cards.forEach((card, i) => startCardIdleBreeze(card, i));
+
+          // Butter-smooth pendulum interaction when cursor hovers
+          cards.forEach((card, index) => {
+            let isHovered = false;
+
+            card.addEventListener('mouseenter', (e) => {
+              isHovered = true;
+              if (idleTweens[index]) idleTweens[index].pause();
+
+              const rect = card.getBoundingClientRect();
+              const enterFromLeft = (e.clientX - rect.left) < (rect.width / 2);
+              const tilt = enterFromLeft ? 1.6 : -1.6;
+
+              // Smooth single graceful tilt, then gentle settle without erratic vibrations
+              gsap.killTweensOf(card);
+              gsap.to(card, {
+                rotation: tilt,
+                duration: 0.45,
+                ease: "power2.out",
+                onComplete: () => {
+                  gsap.to(card, {
+                    rotation: 0,
+                    duration: 0.85,
+                    ease: "sine.inOut",
+                    onComplete: () => {
+                      if (!isHovered && !isDraggingOrScrolling) {
+                        startCardIdleBreeze(card, index);
+                      }
+                    }
+                  });
+                }
+              });
+            });
+
+            card.addEventListener('mouseleave', () => {
+              isHovered = false;
+              gsap.killTweensOf(card);
+              gsap.to(card, {
+                rotation: 0,
+                duration: 0.65,
+                ease: "sine.out",
+                onComplete: () => {
+                  if (!isDraggingOrScrolling) {
+                    startCardIdleBreeze(card, index);
+                  }
+                }
+              });
+            });
+          });
+
+          // Step Navigation Arrows
+          const btnPrev = document.getElementById('track-btn-prev');
+          const btnNext = document.getElementById('track-btn-next');
+
+          if (btnPrev && btnNext) {
+            btnPrev.addEventListener('click', () => {
+              const st = scrollTween.scrollTrigger;
+              if (!st) return;
+              const step = 1 / (totalCards - 1);
+              const targetP = Math.max(0, st.progress - step);
+              const targetY = st.start + targetP * (st.end - st.start);
+              window.scrollTo({ top: targetY, behavior: 'smooth' });
+            });
+
+            btnNext.addEventListener('click', () => {
+              const st = scrollTween.scrollTrigger;
+              if (!st) return;
+              const step = 1 / (totalCards - 1);
+              const targetP = Math.min(1, st.progress + step);
+              const targetY = st.start + targetP * (st.end - st.start);
+              window.scrollTo({ top: targetY, behavior: 'smooth' });
+            });
+          }
+
+          window.addEventListener('resize', () => {
+            if (draggableInstance) {
+              draggableInstance.applyBounds({
+                minX: -getScrollDistance(),
+                maxX: 0
+              });
+            }
+          });
+        }
+      }
+    });
+  </script>
+</body>
+</html>

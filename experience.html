@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Experience — Detail Dossier</title>
+
+  <meta name="description"
+    content="Detailed work experience, UI/UX systems, frontend development, and academic mentorship documentation of Tsalits Sabila Fatah.">
+  <meta name="theme-color" content="#050505">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: '#050505',
+            surface: '#0D0F14',
+            'surface-2': '#141A26',
+            navy: {
+              DEFAULT: '#1E3A8A',
+              deep: '#172554'
+            },
+            'blue-accent': '#60A5FA',
+            primary: { DEFAULT: '#1E3A8A', dark: '#172554', light: '#60A5FA' },
+            accent: { DEFAULT: '#60A5FA', hover: '#93C5FD' },
+            ivory: { DEFAULT: '#050505', light: '#0D0F14', warm: '#141A26' },
+            charcoal: { DEFAULT: '#FFFFFF', soft: '#A1A8B8', muted: '#64748B' },
+            burgundy: { DEFAULT: '#60A5FA', dark: '#172554', light: '#93C5FD' },
+            beige: { DEFAULT: '#141A26', dark: '#1E293B' }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', '"Playfair Display"', 'Georgia', 'serif'],
+            display: ['"Playfair Display"', '"Cormorant Garamond"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-[#050505] text-[#FFFFFF] selection:bg-[#1E3A8A] selection:text-white">
+
+  <div class="grain-overlay" aria-hidden="true"></div>
+  <div class="custom-cursor-dot" aria-hidden="true"></div>
+  <div class="custom-cursor-ring" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="site-header py-5 md:py-7 px-6 lg:px-12">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html"
+        class="font-serif tracking-widest text-sm font-semibold text-white hover:text-[#60A5FA] transition-colors shrink-0">
+        TSALITS
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-10 font-sans mx-auto" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="experience.html" class="nav-link active">Experience</a>
+        <a href="projects.html" class="nav-link">Project</a>
+        <a href="organization.html" class="nav-link">Organization</a>
+        <a href="index.html#skills" class="nav-link">Skills</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="w-16 hidden lg:block"></div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Fullscreen Overlay -->
+  <div id="mobile-menu-overlay" class="mobile-menu-overlay lg:hidden" aria-hidden="true">
+    <div>
+      <div class="text-[10px] tracking-widest uppercase text-[#60A5FA] font-sans font-semibold mb-6">
+        Portfolio Navigation
+      </div>
+      <nav class="space-y-4 font-serif">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="experience.html" class="mobile-nav-link active">Experience</a>
+        <a href="projects.html" class="mobile-nav-link">Project</a>
+        <a href="organization.html" class="mobile-nav-link">Organization</a>
+        <a href="index.html#skills" class="mobile-nav-link font-sans text-xl">Skills</a>
+        <a href="index.html#contact" class="mobile-nav-link font-sans text-xl">Contact</a>
+      </nav>
+    </div>
+    <div class="pt-8 border-t border-[rgba(255,255,255,0.08)] text-xs text-[#A1A8B8] font-sans">
+      Career Experience Dossier
+    </div>
+  </div>
+
+  <main class="pt-28 md:pt-36 pb-24 px-6 lg:px-12">
+    <div class="max-w-7xl mx-auto">
+
+      <!-- Back Link -->
+      <div class="mb-8">
+        <a href="index.html"
+          class="text-xs uppercase tracking-widest text-[#60A5FA] font-sans font-semibold inline-flex items-center gap-2 hover:-translate-x-1.5 transition-transform">
+          ← Return to Overview
+        </a>
+      </div>
+
+      <!-- Page Headline (Bersih tanpa teks 'Professional Engagements' dan tanpa quote) -->
+      <div class="border-b border-[rgba(255,255,255,0.08)] pb-6 mb-16">
+        <h1 class="editorial-title text-5xl sm:text-7xl md:text-8xl text-white leading-[0.92]">
+          Career <span class="editorial-italic font-serif text-[#60A5FA]">Experience</span>
+        </h1>
+      </div>
+
+      <!-- Experience Detailed Timeline & Documentation Cards -->
+      <div class="space-y-16 mb-20 font-sans">
+
+        <!-- Experience 1: cmlabs -->
+        <article
+          class="p-6 md:p-10 lg:p-12 bg-[#0D0F14] border border-[rgba(255,255,255,0.08)] shadow-sm hover:border-[#60A5FA] transition-all reveal-init">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+
+            <!-- Kolom Teks & Rincian (7 cols) -->
+            <div class="lg:col-span-7">
+              <div class="flex flex-wrap items-center gap-3 mb-3">
+                <span
+                  class="text-[10px] tracking-widest uppercase font-semibold text-[#60A5FA] bg-[#172554] px-2.5 py-1">
+                  Magang Industri (Internship)
+                </span>
+                <span class="text-xs font-semibold text-[#A1A8B8]">
+                  Februari 2025 — Mei 2025
+                </span>
+              </div>
+
+              <h2 class="font-serif text-3xl md:text-4xl text-white leading-tight">
+                Frontend Developer
+              </h2>
+              <div class="text-sm font-semibold text-[#A1A8B8] mt-1 mb-4">
+                cmlabs — SEO &amp; IT Solutions &middot; Surabaya / Remote
+              </div>
+
+              <p class="text-[#A1A8B8] text-sm md:text-base leading-relaxed mb-6">
+                Sistem deteksi plagiarisme berbasis web yang membandingkan konten website pelanggan dengan sumber lain
+                di internet untuk mengidentifikasi tingkat kemiripan, lalu menampilkan hasilnya secara visual dan
+                interaktif. Platform ini digunakan untuk memverifikasi keaslian konten secara cepat dan akurat.
+              </p>
+
+              <div class="text-xs font-semibold uppercase tracking-wider text-white mb-3">
+                Tanggung Jawab &amp; Capaian Utama:
+              </div>
+              <ul class="space-y-2.5 mb-6 text-sm text-[#A1A8B8]">
+                <li class="flex items-start gap-2.5">
+                  <span class="text-[#60A5FA] mt-1 text-sm leading-none">▪</span>
+                  <span>Mengembangkan arsitektur antarmuka web sistem deteksi plagiarisme menggunakan
+                    <strong>Vue.js</strong> dengan penekanan pada responsivitas dan kemudahan navigasi di berbagai
+                    perangkat.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-[#60A5FA] mt-1 text-sm leading-none">▪</span>
+                  <span>Mengintegrasikan <strong>REST API</strong> intensif secara dinamis agar hasil kalkulasi
+                    persentase kemiripan teks dapat divisualisasikan secara instan dan interaktif.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-[#60A5FA] mt-1 text-sm leading-none">▪</span>
+                  <span>Melakukan pengujian fungsional manual sebelum rilis produksi guna memastikan
+                    akurasi hasil scan teks.</span>
+                </li>
+              </ul>
+
+              <div class="flex flex-wrap gap-2 pt-4 border-t border-[rgba(255,255,255,0.08)]">
+                <span class="text-xs uppercase tracking-wider px-3 py-1 bg-[#141A26] text-white">Vue.js</span>
+                <span class="text-xs uppercase tracking-wider px-3 py-1 bg-[#141A26] text-white">RESTful API</span>
+                <span class="text-xs uppercase tracking-wider px-3 py-1 bg-[#141A26] text-white">Frontend
+                  Engineering</span>
+                <span class="text-xs uppercase tracking-wider px-3 py-1 bg-[#141A26] text-white">Performance
+                  Optimization</span>
+                <span class="text-xs uppercase tracking-wider px-3 py-1 bg-[#141A26] text-white">Manual QA</span>
+              </div>
+            </div>
+
+            <!-- Kolom Dokumentasi Gambar Web (5 cols) -->
+            <div class="lg:col-span-5 space-y-4">
+              <div
+                class="text-[10px] tracking-widest uppercase font-semibold text-[#A1A8B8] flex items-center justify-between">
+                <span>Dokumentasi Web cmlabs</span>
+                <span class="text-[#60A5FA]">Live System</span>
+              </div>
+
+              <!-- Main Showcase Image -->
+              <div
+                class="group relative overflow-hidden border border-[rgba(255,255,255,0.08)] bg-[#141A26] cursor-pointer shadow-sm hover:shadow-md transition-shadow"
+                onclick="window.openImageModal('assets/experience/cmlabs/output_text.png', 'Tampilan Output Hasil Scan Plagiarisme - cmlabs')">
+                <div class="aspect-[16/10] overflow-hidden">
+                  <img src="assets/experience/cmlabs/plagiarism_checker.png" alt="Tampilan Output Scan Plagiarisme"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy">
+                </div>
+                <div
+                  class="absolute bottom-2 left-2 bg-black/75 backdrop-blur-sm text-white px-2 py-1 text-[9px] uppercase tracking-wider">
+                  Hasil Scan Plagiarisme Text
+                </div>
+              </div>
+
+              <!-- Grid 2 Thumbnail Pendukung -->
+              <div class="grid grid-cols-2 gap-3">
+                <div
+                  class="group relative overflow-hidden border border-[rgba(255,255,255,0.08)] bg-[#141A26] cursor-pointer hover:border-[#60A5FA] transition-colors"
+                  onclick="window.openImageModal('assets/experience/cmlabs/input_text.png', 'Tampilan Input Text - cmlabs')">
+                  <div class="aspect-[4/3] overflow-hidden">
+                    <img src="assets/experience/cmlabs/login.png" alt="Tampilan Input Text"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy">
+                  </div>
+                  <div class="p-1.5 bg-[#0D0F14] text-[9px] uppercase tracking-wider text-[#A1A8B8] truncate">
+                    Input Text Form
+                  </div>
+                </div>
+
+                <div
+                  class="group relative overflow-hidden border border-[rgba(255,255,255,0.08)] bg-[#141A26] cursor-pointer hover:border-[#60A5FA] transition-colors"
+                  onclick="window.openImageModal('assets/experience/cmlabs/input_file.png', 'Tampilan Upload File Document - cmlabs')">
+                  <div class="aspect-[4/3] overflow-hidden">
+                    <img src="assets/experience/cmlabs/output.png" alt="Tampilan Upload File"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy">
+                  </div>
+                  <div class="p-1.5 bg-[#0D0F14] text-[9px] uppercase tracking-wider text-[#A1A8B8] truncate">
+                    Input File Upload
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-[10px] text-[#A1A8B8] italic text-right">
+                *Klik gambar untuk memperbesar tampilan
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- Experience 2: Bandung Techno Park WRAP -->
+        <article
+          class="p-6 md:p-10 lg:p-12 bg-[#0D0F14] border border-[rgba(255,255,255,0.08)] shadow-sm hover:border-[#60A5FA] transition-all reveal-init">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+
+            <!-- Kolom Teks & Rincian (7 cols) -->
+            <div class="lg:col-span-7">
+              <div class="flex flex-wrap items-center gap-3 mb-3">
+                <span
+                  class="text-[10px] tracking-widest uppercase font-semibold text-[#60A5FA] bg-[#172554] px-2.5 py-1">
+                  Program Inkubasi Kewirausahaan (WRAP)
+                </span>
+                <span class="text-xs font-semibold text-[#A1A8B8]">
+                  Februari 2025 — Juni 2025
+                </span>
+              </div>
+
+              <h2 class="font-serif text-3xl md:text-4xl text-white leading-tight">
+                UI/UX Designer — CoHive
+              </h2>
+              <div class="text-sm font-semibold text-[#A1A8B8] mt-1 mb-4">
+                Bandung Techno Park — WRAP Entrepreneurship &middot; Surabaya / Remote
+              </div>
+
+              <p class="text-[#A1A8B8] text-sm md:text-base leading-relaxed mb-6">
+                CoHive adalah aplikasi sistem manajemen stok dan keuangan yang dirancang khusus untuk koperasi. Produk
+                ini dikembangkan untuk membantu koperasi mencatat, mengelola, dan memantau seluruh aktivitas stok barang
+                dan transaksi keuangan secara terintegrasi, mudah digunakan, dan efisien.
+              </p>
+
+              <div class="text-xs font-semibold uppercase tracking-wider text-white mb-3">
+                Tanggung Jawab &amp; Capaian Utama:
+              </div>
+              <ul class="space-y-2.5 mb-6 text-sm text-[#A1A8B8]">
+                <li class="flex items-start gap-2.5">
+                  <span class="text-[#60A5FA] mt-1 text-sm leading-none">▪</span>
+                  <span>Memimpin perancangan antarmuka dari riset pengguna (*user research*), analisis proses bisnis
+                    koperasi, perancangan wireframe, hingga *high-fidelity interactive prototype* di
+                    <strong>Figma</strong>.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-[#60A5FA] mt-1 text-sm leading-none">▪</span>
+                  <span>Membangun *design system* komprehensif mencakup color palette kontras tinggi, typography scale,
+                    dan komponen formulir keuangan yang modular.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-[#60A5FA] mt-1 text-sm leading-none">▪</span>
+                  <span>Melakukan usability testing bersama pengurus koperasi untuk mengevaluasi alur navigasi dan
+                    mengumpulkan masukan perbaikan.</span>
+                </li>
+              </ul>
+
+              <div class="flex flex-wrap gap-2 pt-4 border-t border-[rgba(255,255,255,0.08)]">
+                <span class="text-xs uppercase tracking-wider px-3 py-1 bg-[#141A26] text-white">Figma</span>
+                <span class="text-xs uppercase tracking-wider px-3 py-1 bg-[#141A26] text-white">User-Centered
+                  Design</span>
+                <span class="text-xs uppercase tracking-wider px-3 py-1 bg-[#141A26] text-white">Design Systems</span>
+                <span class="text-xs uppercase tracking-wider px-3 py-1 bg-[#141A26] text-white">High-Fidelity
+                  Prototype</span>
+                <span class="text-xs uppercase tracking-wider px-3 py-1 bg-[#141A26] text-white">Fintech</span>
+              </div>
+            </div>
+
+            <!-- Kolom Dokumentasi UI & Kegiatan CoHive (5 cols) -->
+            <div class="lg:col-span-5 space-y-4">
+              <div
+                class="text-[10px] tracking-widest uppercase font-semibold text-[#A1A8B8] flex items-center justify-between">
+                <span>Dokumentasi UI CoHive &amp; Tim</span>
+                <span class="text-[#60A5FA]">Bandung Techno Park</span>
+              </div>
+
+              <!-- Main Showcase Image -->
+              <div
+                class="group relative overflow-hidden border border-[rgba(255,255,255,0.08)] bg-[#141A26] cursor-pointer shadow-sm hover:shadow-md transition-shadow"
+                onclick="window.openImageModal('assets/experience/cohive/cohive_main.jpg', 'Antarmuka Utama Platform CoHive - Koperasi Digital')">
+                <div class="aspect-[16/10] overflow-hidden">
+                  <img src="assets/experience/cohive/cohive_main.jpg" alt="Antarmuka CoHive"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy">
+                </div>
+                <div
+                  class="absolute bottom-2 left-2 bg-black/75 backdrop-blur-sm text-white px-2 py-1 text-[9px] uppercase tracking-wider">
+                  UI Mockup Platform CoHive
+                </div>
+              </div>
+
+              <!-- Grid 2 Thumbnail Pendukung -->
+              <div class="grid grid-cols-2 gap-3">
+                <div
+                  class="group relative overflow-hidden border border-[rgba(255,255,255,0.08)] bg-[#141A26] cursor-pointer hover:border-[#60A5FA] transition-colors"
+                  onclick="window.openImageModal('assets/experience/cohive/cohive_figma.png', 'Perancangan Figma UI/UX Workspace - CoHive')">
+                  <div class="aspect-[4/3] overflow-hidden">
+                    <img src="assets/experience/cohive/cohive_figma.png" alt="Figma Workspace"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy">
+                  </div>
+                  <div class="p-1.5 bg-[#0D0F14] text-[9px] uppercase tracking-wider text-[#A1A8B8] truncate">
+                    Figma Workspace
+                  </div>
+                </div>
+
+                <div
+                  class="group relative overflow-hidden border border-[rgba(255,255,255,0.08)] bg-[#141A26] cursor-pointer hover:border-[#60A5FA] transition-colors"
+                  onclick="window.openImageModal('assets/experience/cohive/team_1.jpg', 'Dokumentasi Tim Inkubasi WRAP - Bandung Techno Park')">
+                  <div class="aspect-[4/3] overflow-hidden">
+                    <img src="assets/experience/cohive/team_1.jpg" alt="Dokumentasi Tim BTP"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy">
+                  </div>
+                  <div class="p-1.5 bg-[#0D0F14] text-[9px] uppercase tracking-wider text-[#A1A8B8] truncate">
+                    Dokumentasi Tim BTP
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-[10px] text-[#A1A8B8] italic text-right">
+                *Klik gambar untuk memperbesar tampilan
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- Experience 3: Asisten Praktikum Basis Data -->
+        <article
+          class="p-6 md:p-10 lg:p-12 bg-[#0D0F14] border border-[rgba(255,255,255,0.08)] shadow-sm hover:border-[#60A5FA] transition-all reveal-init">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+
+            <!-- Kolom Teks & Rincian (7 cols) -->
+            <div class="lg:col-span-7">
+              <div class="flex flex-wrap items-center gap-3 mb-3">
+                <span
+                  class="text-[10px] tracking-widest uppercase font-semibold text-[#60A5FA] bg-[#172554] px-2.5 py-1">
+                  Keterlibatan Akademis (Teaching Assistant)
+                </span>
+                <span class="text-xs font-semibold text-[#A1A8B8]">
+                  Tahun 2025
+                </span>
+              </div>
+
+              <h2 class="font-serif text-3xl md:text-4xl text-white leading-tight">
+                Asisten Praktikum Laboratorium Basis Data
+              </h2>
+              <div class="text-sm font-semibold text-[#A1A8B8] mt-1 mb-4">
+                Telkom University Surabaya — Fakultas Informatika
+              </div>
+
+              <p class="text-[#A1A8B8] text-sm md:text-base leading-relaxed mb-6">
+                Praktikum Basis Data adalah mata kuliah laboratorium yang membekali mahasiswa jurusan Bisnis Digital
+                dengan kemampuan merancang skema relasional, menormalisasi tabel, dan menulis kueri SQL untuk mengelola
+                data secara terstruktur dan konsisten.
+              </p>
+
+              <div class="text-xs font-semibold uppercase tracking-wider text-white mb-3">
+                Tanggung Jawab &amp; Capaian Utama:
+              </div>
+              <ul class="space-y-2.5 mb-6 text-sm text-[#A1A8B8]">
+                <li class="flex items-start gap-2.5">
+                  <span class="text-[#60A5FA] mt-1 text-sm leading-none">▪</span>
+                  <span>Membimbing mahasiswa dalam sesi laboratorium perancangan Entity-Relationship Diagram (ERD),
+                    normalisasi 1NF hingga 3NF, dan optimasi query SQL relasional.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-[#60A5FA] mt-1 text-sm leading-none">▪</span>
+                  <span>Memeriksa, menguji, dan memberikan evaluasi mendalam atas laporan proyek basis data mahasiswa
+                    untuk memastikan integritas data (*referential integrity*).</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-[#60A5FA] mt-1 text-sm leading-none">▪</span>
+                  <span>Menyusun materi praktikum dan modul studi kasus industri perangkat lunak yang selaras dengan
+                    kurikulum nasional Informatika.</span>
+                </li>
+              </ul>
+
+              <div class="flex flex-wrap gap-2 pt-4 border-t border-[rgba(255,255,255,0.08)]">
+                <span class="text-xs uppercase tracking-wider px-3 py-1 bg-[#141A26] text-white">SQL</span>
+                <span class="text-xs uppercase tracking-wider px-3 py-1 bg-[#141A26] text-white">Entity-Relationship
+                  Diagram</span>
+                <span class="text-xs uppercase tracking-wider px-3 py-1 bg-[#141A26] text-white">Normalisasi 3NF</span>
+                <span class="text-xs uppercase tracking-wider px-3 py-1 bg-[#141A26] text-white">Database
+                  Optimization</span>
+                <span class="text-xs uppercase tracking-wider px-3 py-1 bg-[#141A26] text-white">Academic
+                  Mentoring</span>
+              </div>
+            </div>
+
+            <!-- Kolom Dokumentasi Asisten Praktikum (5 cols) -->
+            <div class="lg:col-span-5 space-y-4">
+              <div
+                class="text-[10px] tracking-widest uppercase font-semibold text-[#A1A8B8] flex items-center justify-between">
+                <span>Dokumentasi Kegiatan Asisten Lab</span>
+                <span class="text-[#60A5FA]">Laboratorium</span>
+              </div>
+
+              <!-- Main Showcase Image -->
+              <div
+                class="group relative overflow-hidden border border-[rgba(255,255,255,0.08)] bg-[#141A26] cursor-pointer shadow-sm hover:shadow-md transition-shadow"
+                onclick="window.openImageModal('assets/experience/aslab/aslab_1.jpeg', 'Dokumentasi Asistensi Praktikum Basis Data di Laboratorium')">
+                <div class="aspect-[16/10] overflow-hidden">
+                  <img src="assets/experience/aslab/aslab_1.jpeg" alt="Dokumentasi Asisten Praktikum"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy">
+                </div>
+                <div
+                  class="absolute bottom-2 left-2 bg-black/75 backdrop-blur-sm text-white px-2 py-1 text-[9px] uppercase tracking-wider">
+                  Sesi Bimbingan Laboratorium
+                </div>
+              </div>
+
+              <!-- Grid 2 Thumbnail Pendukung -->
+              <div class="grid grid-cols-2 gap-3">
+                <div
+                  class="group relative overflow-hidden border border-[rgba(255,255,255,0.08)] bg-[#141A26] cursor-pointer hover:border-[#60A5FA] transition-colors"
+                  onclick="window.openImageModal('assets/experience/aslab/aslab_3.jpeg', 'Dokumentasi Ruang Laboratorium Basis Data')">
+                  <div class="aspect-[4/3] overflow-hidden">
+                    <img src="assets/experience/aslab/aslab_3.jpeg" alt="Laboratorium Basis Data"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy">
+                  </div>
+                  <div class="p-1.5 bg-[#0D0F14] text-[9px] uppercase tracking-wider text-[#A1A8B8] truncate">
+                    Ruang Lab Praktikum
+                  </div>
+                </div>
+
+                <div
+                  class="group relative overflow-hidden border border-[rgba(255,255,255,0.08)] bg-[#141A26] cursor-pointer hover:border-[#60A5FA] transition-colors"
+                  onclick="window.openImageModal('assets/experience/aslab/aslab_2.jpeg', 'Dokumentasi Tim Asisten Praktikum Basis Data')">
+                  <div class="aspect-[4/3] overflow-hidden">
+                    <img src="assets/experience/aslab/aslab_2.jpeg" alt="Tim Asisten Lab"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy">
+                  </div>
+                  <div class="p-1.5 bg-[#0D0F14] text-[9px] uppercase tracking-wider text-[#A1A8B8] truncate">
+                    Tim Asisten Lab
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-[10px] text-[#A1A8B8] italic text-right">
+                *Klik gambar untuk memperbesar tampilan
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Action Navigation Links (Bersih tanpa tombol 'Hubungi Saya untuk Diskusi Peluang') -->
+      <div class="flex flex-wrap items-center justify-between gap-4 pt-8 border-t border-[rgba(255,255,255,0.08)]">
+        <a href="index.html" class="btn-editorial">
+          <span>← Kembali ke Home</span>
+        </a>
+        <a href="projects.html" class="btn-editorial btn-editorial-burgundy group">
+          <span>Lanjut ke Halaman Projects</span>
+          <span class="group-hover:translate-x-1 transition-transform">→</span>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Interactive Image Modal / Lightbox for Experience Documentation -->
+  <div id="image-modal-backdrop" class="modal-backdrop" role="dialog" aria-modal="true"
+    aria-label="Documentation Image Preview">
+    <div
+      class="modal-content-container max-w-4xl p-4 bg-[#0D0F14] border border-[rgba(255,255,255,0.08)] shadow-2xl relative">
+      <button id="image-modal-close" class="modal-close-btn" aria-label="Close Preview">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="p-2 md:p-4">
+        <img id="image-modal-src" src="" alt="Documentation Preview"
+          class="w-full h-auto max-h-[75vh] object-contain mx-auto border border-[rgba(255,255,255,0.08)]">
+        <div id="image-modal-caption" class="text-xs font-sans text-[#A1A8B8] mt-3 text-center font-medium"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer
+    class="py-8 px-6 lg:px-12 bg-[#050505] text-[#A1A8B8] border-t border-[rgba(255,255,255,0.08)] font-sans text-xs">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="text-[11px] text-[#A1A8B8]">&copy; 2026. All rights reserved.</div>
+      <a href="#" aria-label="Ascend to top"
+        class="w-10 h-10 rounded-full bg-[#1E3A8A] hover:bg-[#3B82F6] text-white flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 border border-slate-600/40">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="19" x2="12" y2="5"></line>
+          <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+  <script>
+    // Lightweight lightbox viewer for documentation images
+    window.openImageModal = function (src, caption) {
+      const backdrop = document.getElementById('image-modal-backdrop');
+      const img = document.getElementById('image-modal-src');
+      const cap = document.getElementById('image-modal-caption');
+      if (backdrop && img) {
+        img.src = src;
+        if (cap) cap.textContent = caption || '';
+        backdrop.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    };
+
+    const closeBtn = document.getElementById('image-modal-close');
+    const backdrop = document.getElementById('image-modal-backdrop');
+    function closeImageModal() {
+      if (backdrop) {
+        backdrop.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+    closeBtn?.addEventListener('click', closeImageModal);
+    backdrop?.addEventListener('click', (e) => {
+      if (e.target === backdrop) closeImageModal();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeImageModal();
+    });
+  </script>
+</body>
+
+</html>

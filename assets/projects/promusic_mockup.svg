@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#191817"/>
+      <stop offset="100%" stop-color="#121110"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="800" fill="url(#bg2)"/>
+  
+  <!-- Subtle Burgundy Ambient Light -->
+  <circle cx="200" cy="200" r="260" fill="#6B1D2F" opacity="0.16" filter="blur(60px)"/>
+  <circle cx="1000" cy="650" r="280" fill="#5E1927" opacity="0.14" filter="blur(60px)"/>
+
+  <!-- Editorial Frame -->
+  <rect x="30" y="30" width="1140" height="740" fill="none" stroke="#332E2C" stroke-width="1"/>
+  <rect x="36" y="36" width="1128" height="728" fill="none" stroke="#6B1D2F" stroke-width="0.6" stroke-opacity="0.35"/>
+
+  <!-- Header -->
+  <text x="70" y="80" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" letter-spacing="4" fill="#A89F91">ENTERPRISE SYSTEM ARCHITECTURE // AUDIO COLLABORATION</text>
+  <text x="1130" y="80" text-anchor="end" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" letter-spacing="3" fill="#6B1D2F">N° 04 · PROMUSIC ECOSYSTEM</text>
+  <line x1="70" y1="100" x2="1130" y2="100" stroke="#2B2826" stroke-width="1"/>
+
+  <!-- Left: Audio Ecosystem & UML Workspace -->
+  <g transform="translate(70, 140)">
+    <rect width="700" height="580" rx="4" fill="#141312" stroke="#332D2A" stroke-width="1"/>
+    <rect width="700" height="44" rx="4" fill="#1A1817"/>
+    <circle cx="24" cy="22" r="5" fill="#6B1D2F"/>
+    <circle cx="42" cy="22" r="5" fill="#3D3734"/>
+    <circle cx="60" cy="22" r="5" fill="#3D3734"/>
+    <text x="90" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#8C8375" letter-spacing="2">UML DOMAIN MODEL &amp; SEQUENCE FLOW // AUDIO STREAM REGISTRY</text>
+
+    <!-- Waveform & Sound Track UI -->
+    <g transform="translate(40, 70)">
+      <text x="0" y="22" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="28" fill="#F5F2EB">Decentralized Audio Asset &amp; Split Royalties</text>
+      <text x="0" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#8C8375">Orchestrating composers, lyricists, publishers, and streaming syndicates</text>
+
+      <!-- Visual Audio Waveform -->
+      <g transform="translate(0, 80)">
+        <rect width="620" height="100" fill="#181716" stroke="#2B2826" rx="3"/>
+        <!-- Fake Waveform Bars -->
+        <g fill="#6B1D2F" opacity="0.85">
+          <rect x="20" y="40" width="4" height="20" rx="2"/><rect x="30" y="30" width="4" height="40" rx="2"/>
+          <rect x="40" y="20" width="4" height="60" rx="2"/><rect x="50" y="35" width="4" height="30" rx="2"/>
+          <rect x="60" y="15" width="4" height="70" rx="2"/><rect x="70" y="25" width="4" height="50" rx="2"/>
+          <rect x="80" y="10" width="4" height="80" rx="2"/><rect x="90" y="20" width="4" height="60" rx="2"/>
+          <rect x="100" y="30" width="4" height="40" rx="2"/><rect x="110" y="42" width="4" height="16" rx="2"/>
+          <rect x="120" y="25" width="4" height="50" rx="2"/><rect x="130" y="12" width="4" height="76" rx="2"/>
+          <rect x="140" y="30" width="4" height="40" rx="2"/><rect x="150" y="18" width="4" height="64" rx="2"/>
+          <rect x="160" y="24" width="4" height="52" rx="2"/><rect x="170" y="10" width="4" height="80" rx="2"/>
+          <rect x="180" y="30" width="4" height="40" rx="2"/><rect x="190" y="38" width="4" height="24" rx="2"/>
+          <rect x="200" y="14" width="4" height="72" rx="2"/><rect x="210" y="28" width="4" height="44" rx="2"/>
+          <rect x="220" y="35" width="4" height="30" rx="2"/><rect x="230" y="10" width="4" height="80" rx="2"/>
+          <rect x="240" y="22" width="4" height="56" rx="2"/><rect x="250" y="32" width="4" height="36" rx="2"/>
+          <rect x="260" y="44" width="4" height="12" rx="2"/><rect x="270" y="20" width="4" height="60" rx="2"/>
+          <rect x="280" y="15" width="4" height="70" rx="2"/><rect x="290" y="30" width="4" height="40" rx="2"/>
+          <rect x="300" y="10" width="4" height="80" rx="2"/><rect x="310" y="25" width="4" height="50" rx="2"/>
+          <rect x="320" y="18" width="4" height="64" rx="2"/><rect x="330" y="34" width="4" height="32" rx="2"/>
+          <rect x="340" y="12" width="4" height="76" rx="2"/><rect x="350" y="28" width="4" height="44" rx="2"/>
+          <rect x="360" y="40" width="4" height="20" rx="2"/><rect x="370" y="16" width="4" height="68" rx="2"/>
+          <rect x="380" y="22" width="4" height="56" rx="2"/><rect x="390" y="10" width="4" height="80" rx="2"/>
+          <rect x="400" y="30" width="4" height="40" rx="2"/><rect x="410" y="18" width="4" height="64" rx="2"/>
+          <rect x="420" y="26" width="4" height="48" rx="2"/><rect x="430" y="35" width="4" height="30" rx="2"/>
+          <rect x="440" y="14" width="4" height="72" rx="2"/><rect x="450" y="22" width="4" height="56" rx="2"/>
+          <rect x="460" y="36" width="4" height="28" rx="2"/><rect x="470" y="10" width="4" height="80" rx="2"/>
+          <rect x="480" y="25" width="4" height="50" rx="2"/><rect x="490" y="38" width="4" height="24" rx="2"/>
+          <rect x="500" y="18" width="4" height="64" rx="2"/><rect x="510" y="28" width="4" height="44" rx="2"/>
+          <rect x="520" y="12" width="4" height="76" rx="2"/><rect x="530" y="22" width="4" height="56" rx="2"/>
+          <rect x="540" y="30" width="4" height="40" rx="2"/><rect x="550" y="40" width="4" height="20" rx="2"/>
+          <rect x="560" y="15" width="4" height="70" rx="2"/><rect x="570" y="25" width="4" height="50" rx="2"/>
+          <rect x="580" y="35" width="4" height="30" rx="2"/><rect x="590" y="44" width="4" height="12" rx="2"/>
+        </g>
+        <!-- Scrubber line -->
+        <line x1="260" y1="0" x2="260" y2="100" stroke="#F5F2EB" stroke-width="2"/>
+        <polygon points="255,0 265,0 260,10" fill="#F5F2EB"/>
+      </g>
+
+      <!-- UML Class Diagrams -->
+      <g transform="translate(0, 210)">
+        <!-- Class 1 -->
+        <rect x="0" y="0" width="190" height="160" fill="#181716" stroke="#332D2A" rx="2"/>
+        <rect x="0" y="0" width="190" height="32" fill="#201E1D"/>
+        <text x="12" y="21" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="11" fill="#F5F2EB">«Entity» TrackMaster</text>
+        <line x1="0" y1="32" x2="190" y2="32" stroke="#332D2A"/>
+        <text x="12" y="52" font-family="'Courier New', monospace" font-size="10" fill="#A89F91">- isrcCode: String</text>
+        <text x="12" y="70" font-family="'Courier New', monospace" font-size="10" fill="#A89F91">- audioStemUri: URI</text>
+        <text x="12" y="88" font-family="'Courier New', monospace" font-size="10" fill="#A89F91">- sampleRate: Int</text>
+        <line x1="0" y1="100" x2="190" y2="100" stroke="#2B2826"/>
+        <text x="12" y="120" font-family="'Courier New', monospace" font-size="10" fill="#6B1D2F">+ splitRoyalties()</text>
+        <text x="12" y="138" font-family="'Courier New', monospace" font-size="10" fill="#6B1D2F">+ generateStem()</text>
+
+        <!-- Connector line -->
+        <line x1="190" y1="80" x2="220" y2="80" stroke="#6B1D2F" stroke-width="1.5"/>
+
+        <!-- Class 2 -->
+        <rect x="220" y="0" width="190" height="160" fill="#181716" stroke="#332D2A" rx="2"/>
+        <rect x="220" y="0" width="190" height="32" fill="#201E1D"/>
+        <text x="232" y="21" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="11" fill="#F5F2EB">«Service» RoyaltyLedger</text>
+        <line x1="220" y1="32" x2="410" y2="32" stroke="#332D2A"/>
+        <text x="232" y="52" font-family="'Courier New', monospace" font-size="10" fill="#A89F91">- contractId: UUID</text>
+        <text x="232" y="70" font-family="'Courier New', monospace" font-size="10" fill="#A89F91">- revenuePool: Float</text>
+        <text x="232" y="88" font-family="'Courier New', monospace" font-size="10" fill="#A89F91">- contributorMap: Map</text>
+        <line x1="220" y1="100" x2="410" y2="100" stroke="#2B2826"/>
+        <text x="232" y="120" font-family="'Courier New', monospace" font-size="10" fill="#6B1D2F">+ disburseShares()</text>
+        <text x="232" y="138" font-family="'Courier New', monospace" font-size="10" fill="#6B1D2F">+ auditTransactions()</text>
+
+        <!-- Connector line -->
+        <line x1="410" y1="80" x2="440" y2="80" stroke="#6B1D2F" stroke-width="1.5"/>
+
+        <!-- Class 3 -->
+        <rect x="440" y="0" width="180" height="160" fill="#181716" stroke="#332D2A" rx="2"/>
+        <rect x="440" y="0" width="180" height="32" fill="#201E1D"/>
+        <text x="452" y="21" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="11" fill="#F5F2EB">«Actor» Stakeholder</text>
+        <line x1="440" y1="32" x2="620" y2="32" stroke="#332D2A"/>
+        <text x="452" y="52" font-family="'Courier New', monospace" font-size="10" fill="#A89F91">- role: Musician | Pub</text>
+        <text x="452" y="70" font-family="'Courier New', monospace" font-size="10" fill="#A89F91">- payoutMethod: IBAN</text>
+        <text x="452" y="88" font-family="'Courier New', monospace" font-size="10" fill="#A89F91">- kycVerified: Bool</text>
+        <line x1="440" y1="100" x2="620" y2="100" stroke="#2B2826"/>
+        <text x="452" y="120" font-family="'Courier New', monospace" font-size="10" fill="#6B1D2F">+ claimRevenue()</text>
+        <text x="452" y="138" font-family="'Courier New', monospace" font-size="10" fill="#6B1D2F">+ signContract()</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right: Architecture Monograph -->
+  <g transform="translate(800, 140)">
+    <rect width="330" height="580" rx="4" fill="#141312" stroke="#332D2A" stroke-width="1"/>
+    <rect width="330" height="44" rx="4" fill="#1A1817"/>
+    <text x="24" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#8C8375" letter-spacing="2">SPECIFICATION DOSSIER</text>
+
+    <g transform="translate(24, 60)">
+      <text x="0" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" letter-spacing="2" fill="#6B1D2F">SOFTWARE REQUIREMENTS SPEC</text>
+      <text x="0" y="48" font-family="'Cormorant Garamond', serif" font-size="22" fill="#F5F2EB">Promusic Architecture</text>
+      <text x="0" y="70" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#8C8375" line-height="1.5">Meticulously constructed system models defining multi-tenant rights, high-bitrate streaming pipes, and automated escrow distribution.</text>
+
+      <line x1="0" y1="110" x2="280" y2="110" stroke="#2B2826" stroke-width="1"/>
+
+      <!-- Specs list -->
+      <g transform="translate(0, 130)">
+        <text x="0" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" letter-spacing="1" fill="#8C8375">01 · USE CASE BLUEPRINT</text>
+        <text x="0" y="38" font-family="'Cormorant Garamond', serif" font-size="16" fill="#EAE3D5">18 Primary User Scenarios</text>
+
+        <text x="0" y="80" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" letter-spacing="1" fill="#8C8375">02 · SEQUENCE WORKFLOWS</text>
+        <text x="0" y="98" font-family="'Cormorant Garamond', serif" font-size="16" fill="#EAE3D5">End-to-End Rights Validation</text>
+
+        <text x="0" y="140" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" letter-spacing="1" fill="#8C8375">03 · DATABASE NORMALIZATION</text>
+        <text x="0" y="158" font-family="'Cormorant Garamond', serif" font-size="16" fill="#EAE3D5">Third Normal Form (3NF) Compliance</text>
+
+        <text x="0" y="200" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" letter-spacing="1" fill="#8C8375">04 · QUALITY ASSURANCE MATRIX</text>
+        <text x="0" y="218" font-family="'Cormorant Garamond', serif" font-size="16" fill="#6B1D2F">100% Boundary Verification</text>
+      </g>
+    </g>
+  </g>
+</svg>
