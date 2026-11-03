@@ -1,4 +1,4 @@
-# Tsalits Sabila Fatah — Dark Editorial Portfolio
+# Tsalits Sabila Fatah — Dark Portfolio
 
 Sebuah website personal portfolio dengan mengadaptasi **visual direction, layout philosophy, dan user experience** dari **Gucci Osteria Florence** (https://www.gucciosteria.com/en/florence), diolah menjadi tema gelap yang bersih dan profesional.
 
