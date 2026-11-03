@@ -1,27 +1,29 @@
-# Tsalits Sabila Fatah — Luxury Editorial Portfolio
+# Tsalits Sabila Fatah — Dark Editorial Portfolio
 
-Sebuah website personal portfolio dengan mengadaptasi **visual direction, layout philosophy, dan user experience** dari **Gucci Osteria Florence** (https://www.gucciosteria.com/en/florence).
+Sebuah website personal portfolio dengan mengadaptasi **visual direction, layout philosophy, dan user experience** dari **Gucci Osteria Florence** (https://www.gucciosteria.com/en/florence), diolah menjadi tema gelap yang bersih dan profesional.
 
-Didesain untuk merepresentasikan identitas **Tsalits Sabila Fatah**, seorang Creative Technologist dan mahasiswa tingkat akhir S1 Informatika di **Telkom University Surabaya** (IPK 3.84 / Cum Laude Track), yang bergerak di titik temu antara **Frontend Architecture**, **UI/UX Craftsmanship**, dan **Artificial Intelligence Research**.
+Didesain untuk merepresentasikan identitas **Tsalits Sabila Fatah**, lulusan S1 Informatika **Telkom University Surabaya** (IPK 3.84 / 4.00), dengan fokus pada **Software Quality Assurance** dan **System Analysis**, berlatar belakang **Frontend Development** dan **UI/UX Design**.
 
 ---
 
 ## 1. Konsep & Filosofi Desain
 
-- **Luxury Editorial Design:** Nuansa majalah dan buku monograf eksklusif, bukan template portofolio developer pada umumnya.
-- **Minimalist but Expressive:** Ruang bernapas (*whitespace*) yang luas dipadukan dengan tipografi ekspresif dan tata letak asimetris.
-- **Contemporary Art Direction:** Komposisi foto berbingkai museum, stempel kuratorial, nomor monograf (*N° 01*, *N° 02*), serta aksen angka Romawi (*I, II, III, IV*).
-- **Immersive Visual Storytelling:** Penyajian proyek terpilih (*Selected Works*) dengan visual besar berselang-seling (*alternating layout*) serta modul interaktif *Monograph Case Study*.
+- **Dark Editorial Design:** Nuansa majalah dan buku monograf dalam tampilan gelap yang elegan, bukan template portofolio developer pada umumnya.
+- **Minimalist but Expressive:** Ruang bernapas (*whitespace*) yang luas dipadukan dengan tipografi serif ekspresif, aksen miring (*italic*), dan tata letak yang tenang.
+- **Contemporary Art Direction:** Lapisan *film grain*, kursor kustom, nomor *watermark* pada kartu (*01*, *02*, *03*), serta kartu dengan efek *hover lift* dan *glow* biru halus.
+- **Immersive Ambient Background:** Latar konstelasi interaktif (*canvas*) dan cahaya *aurora* lembut pada bagian hero, serta animasi *reveal* saat halaman digulir.
+- **Recruiter-Friendly:** Informasi inti (peran, pengalaman, proyek, kontak) bisa ditemukan dalam beberapa klik, dengan status *Open to Work* yang terlihat jelas.
 
 ---
 
 ## 2. Identitas Visual
 
 ### Palet Warna
-- **Warm Ivory / Off-White (`#FAF7F2` & `#FFFDF9`):** Latar belakang utama yang hangat dan elegan.
-- **Deep Charcoal / Black (`#191817` & `#2C2A28`):** Teks kontras tinggi dan bingkai monograf.
-- **Muted Burgundy (`#6B1D2F`):** Warna aksen khas editorial mewah untuk detail penting, stempel, dan penekanan.
-- **Warm Beige (`#EBE3D5` & `#F4EFE6`):** Warna pendukung untuk seksi selang-seling dan aksen halus.
+- **Deep Black (`#050505`):** Latar belakang utama.
+- **Surface Dark (`#0D0F14` & `#141A26`):** Permukaan kartu dan section pendukung.
+- **Navy / Biru Tua (`#1E3A8A` & `#172554`):** Tombol utama, border aksen, *glow*, dan latar badge.
+- **Blue Accent (`#60A5FA`):** Biru terang khusus untuk teks aksen, tautan, dan ikon kecil agar kontras tetap terbaca.
+- **White (`#FFFFFF`) & Muted Gray (`#A1A8B8`):** Teks utama dan teks sekunder.
 
 ### Tipografi
 - **Headings & Display:** *Cormorant Garamond* & *Playfair Display* (Serif kontras tinggi dengan aksen miring puitis).
@@ -31,58 +33,84 @@ Didesain untuk merepresentasikan identitas **Tsalits Sabila Fatah**, seorang Cre
 
 ## 3. Struktur Website
 
-1. **Navigation Bar:** Minimalis dengan monogram personal `TSF`, navigasi lengkap (About, Expertise, Projects, Experience, Leadership, Skills, Contact), dan jam langsung kota Surabaya (*WIB / UTC+7*).
-2. **Hero Section:** Tipografi *oversized*, komposisi foto potret Tsalits berbingkai editorial museum, stempel koordinat geografis (*7° 15′ S, 112° 45′ E*), statistik prestasi, dan indikator scroll minimalis.
-3. **About Section:** Narasi personal dan filosofis, foto potret sekunder, tanda tangan autentik (*signature.png*), dan rincian latar belakang akademis Telkom University.
-4. **Expertise Pillars (Chapter II):** Layout kurasi editorial (bukan kumpulan kartu generik) mencakup *Frontend Development*, *UI/UX Design*, *Artificial Intelligence*, dan *Web Systems & QA*.
-5. **Selected Works (Chapter III):** Showcase visual skala besar dengan layout bergantian asimetris. Dilengkapi tombol *Read Monograph & Case Study* yang membuka dialog interaktif berisi *Overview*, *The Challenge*, *Architectural Solution*, *Impact*, dan galeri pendukung.
-6. **Chronicle: Experience & Education (Chapter IV):** Garis waktu editorial mencakup *cmlabs*, *Bandung Techno Park WRAP*, asisten praktikum basis data, serta kurikulum inti S1 Informatika.
-7. **Governance & Leadership (Chapter V):** Rekapitulasi peran kepemimpinan di *BEM KEMA Telkom University*, kepanitiaan kaderisasi *Diklat PKKMB & MC*, *Pekan Ilmiah Mahasiswa (PIM)*, dan *Volunteer BEM Mengajar*.
-8. **Skills & Accreditations (Chapter VI):** Matriks kompetensi teknis dan katalog 5 sertifikasi autentik terverifikasi (Azure Generative AI, API Automation QA, QA Full Mastery, QA Intro, Data Science Professional).
-9. **Closing Monograph & Contact (Chapter VII):** Penutup dramatis bertema gelap arang dengan tipografi raksasa *"Let's Create Something Meaningful"*, tombol *Copy Email* dengan notifikasi toast instan, WhatsApp, LinkedIn, dan GitHub.
-10. **Footer:** Monogram resmi `TSF`, hak cipta 2026, dan tombol halus *Ascend to Top*.
+1. **Navigation Bar:** Minimalis dengan menu Home, About, Experience, Project, Organization, Skills, dan Contact. Nama *TSALITS* muncul saat pengguna menggulir meninggalkan bagian hero. Di perangkat mobile tersedia menu layar penuh (*fullscreen overlay*).
+2. **Hero Section:** Tata letak terpusat tanpa foto, dengan badge *Open to Work & Opportunities*, nama berukuran besar dengan aksen miring *"I'm"*, headline **QA & System Analysis | Frontend & UI/UX Background**, deskripsi singkat, ikon LinkedIn, GitHub, dan Email, serta tombol *Resume / About*.
+3. **Overview (3 Kartu):** Tiga kartu mandiri bernomor *watermark* yang menuju halaman rinci:
+   - **Work Experience (01):** Pengalaman kerja di cmlabs, inkubasi startup Bandung Techno Park, dan asisten praktikum laboratorium basis data.
+   - **Project Experience (02):** Proyek pengujian perangkat lunak, analisis dan perancangan sistem, aplikasi web, perancangan antarmuka UI/UX, serta riset kecerdasan buatan.
+   - **Organizational & Committee Experience (03):** Pengalaman di BEM Telkom University, tata kelola anggaran kepanitiaan, dan Master of Ceremony (MC).
+4. **Skills & Tools:** Tiga baris *marquee* yang berjalan terus: (1) frontend dan desain, (2) data, QA, dan perancangan sistem (Python, SQL, Software QA, UML, Laravel), serta (3) keahlian analisis dan soft skill (pengujian perangkat lunak, analisis kebutuhan, perancangan sistem, komunikasi, kerja tim, manajemen waktu, pemecahan masalah).
+5. **Contact:** Penutup bertema gelap dengan tipografi besar *"Let's Create Something Meaningful"*, badge *Open for Hiring & Collaborations*, dan tiga tombol kontak langsung (Email, LinkedIn, Instagram).
+6. **Footer:** Hak cipta 2026 dan tombol *Ascend to Top*.
+7. **Halaman About (`about.html`):** Profil dan latar belakang.
+8. **Halaman Experience (`experience.html`):** Rincian pengalaman kerja.
+9. **Halaman Project (`projects.html`):** Rincian proyek.
+10. **Halaman Organization (`organization.html`):** Rincian pengalaman organisasi dan kepanitiaan.
 
 ---
 
 ## 4. Cara Menjalankan
 
-### Cara 1: Langsung di Browser (Tanpa Instalasi)
-Cukup buka file `index.html` menggunakan browser modern (Chrome, Edge, Firefox, Safari).
+Halaman memuat `js/app.js` sebagai *ES module*, sehingga situs **harus dijalankan lewat server lokal** dan tidak bisa hanya dibuka dengan klik ganda pada `index.html`.
 
-### Cara 2: Menggunakan Vite / Live Server
-1. Jalankan terminal di folder `PORTOFOLIO`:
+### Cara 1: Menggunakan Vite (Disarankan)
+Prasyarat: Node.js versi 20 atau lebih baru.
+
+1. Jalankan terminal di folder proyek (`portofolio-tsalits`):
    ```bash
-   npx vite
+   npm install
+   npm run dev
    ```
-2. Buka URL lokal yang muncul (misalnya `http://localhost:5173`).
+2. Buka URL lokal yang muncul (biasanya `http://localhost:5173`).
+
+### Cara 2: Build & Preview Versi Produksi
+```bash
+npm run build      # membuat hasil build di folder dist/
+npm run preview    # menjalankan hasil build secara lokal
+```
 
 ---
 
-## 5. Struktur Berkas
+## 5. Deployment & Alur Branch
+
+Situs di-deploy melalui **Netlify** yang terhubung ke repositori GitHub.
+
+- **Branch `main`:** Pengembangan. Semua perubahan dikerjakan dan diuji di sini.
+- **Branch `production`:** Rilis. Netlify mempublikasikan branch ini sebagai situs publik.
+- **Pengaturan build Netlify:** *Build command* `npm run build`, *Publish directory* `dist` (tersimpan di `netlify.toml`).
+
+Alur merilis perubahan:
+```bash
+git checkout main
+git add .
+git commit -m "Deskripsi perubahan"
+git push
+
+# setelah yakin, rilis ke publik
+git checkout production
+git merge main
+git push
+git checkout main
+```
+
+---
+
+## 6. Struktur Berkas
 
 ```
-PORTOFOLIO/
+portofolio-tsalits/
 ├── index.html                   # Halaman utama portofolio
+├── about.html                   # Halaman About
+├── experience.html              # Halaman Work Experience
+├── projects.html                # Halaman Project Experience
+├── organization.html            # Halaman Organizational & Committee Experience
 ├── package.json                 # Konfigurasi npm / vite
+├── netlify.toml                 # Konfigurasi build & deploy Netlify
 ├── README.md                    # Dokumentasi lengkap
-├── assets/                      # Asset gambar autentik
-│   ├── foto.png                 # Foto potret utama Tsalits
-│   ├── portrait_salis.png       # Foto potret sekunder
-│   ├── signature.png            # Tanda tangan asli
-│   └── projects/                # Visual & mockup proyek
-│       ├── cohive.jpg
-│       ├── cohive_home.png
-│       ├── cohive_figma.png
-│       ├── plagiarism_checker.png
-│       ├── plagiarism_login.png
-│       ├── takur.png
-│       ├── ai_mockup.svg
-│       ├── promusic_mockup.svg
-│       └── brainybuddies_mockup.svg
+├── assets/                      # Aset gambar dan visual
+├── Dokumentasi/                 # Dokumen pendukung
 ├── css/
-│   └── style.css                # CSS editorial, kursor mewah, efek grain
+│   └── style.css                # CSS editorial, kursor kustom, efek grain, marquee
 └── js/
-    ├── data.js                  # Seluruh data autentik Tsalits
-    └── app.js                   # Interaktivitas, observer, modal monograf
+    └── app.js                   # Interaktivitas, navigasi, animasi reveal, canvas hero
 ```
-
